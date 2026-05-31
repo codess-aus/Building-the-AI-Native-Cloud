@@ -21,6 +21,15 @@ description: "How short, explicit specs improve alignment before implementation 
 
 Spec-driven development reduces rework and ambiguity. It gives humans and agents a shared contract before implementation starts.
 
+Spec-Driven Development flips the script on traditional software development. For decades, code has been king - specifications were just scaffolding we built and discarded once the "real work" of coding began. Spec-Driven Development changes this: specifications become executable, directly generating working implementations rather than just guiding them.
+
+Spec-Driven Development is a structured process that emphasizes:
+
+- Intent-driven development where specifications define the "what" before the "how"
+- Rich specification creation using guardrails and organizational principles
+- Multi-step refinement rather than one-shot code generation from prompts
+- Heavy reliance on advanced AI model capabilities for specification interpretation
+
 ## Key points for your team
 
 Spec-driven work shifts debate to the right moment: before code is written. This reduces ambiguous implementation paths and helps both humans and AI systems align on expected outcomes.
@@ -36,6 +45,12 @@ In the session context, The most uncomfortable change for engineers is this: the
 ## Put this into practice
 
 Use a short spec template with goal, user impact, success criteria, and out-of-scope for every non-trivial change.
+
+Check out the [GitHub Spec-Kit](https://github.com/github/spec-kit) for an open source toolkit that allows you to focus on product scenarios and predictable outcomes instead of vibe coding every piece from scratch.
+
+Spec Kit can be tailored to your needs through two complementary systems - extensions and presets - plus project-local overrides for one-off adjustments.
+
+
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../06-cloud-native-gave-us-the-substrate/">Previous chapter</a>

@@ -27,7 +27,8 @@ SOURCE_IMAGES = [
     "14-questions.png",
 ]
 
-SLIDE_HEADING = re.compile(r"^## Slide (\d+) — (.+?) \((.+?)\)$", re.MULTILINE)
+EM_DASH = "\u2014"
+SLIDE_HEADING = re.compile(r"^## Slide (\d+) " + EM_DASH + r" (.+?) \((.+?)\)$", re.MULTILINE)
 
 CHAPTER_META = {
     1: {
@@ -144,6 +145,10 @@ def slugify(value: str) -> str:
     return re.sub(r"-+", "-", value).strip("-")
 
 
+def remove_emdash(value: str) -> str:
+    return value.replace("\u2014", "-")
+
+
 def extract_section(body: str, start_marker: str, end_marker: str | None) -> str:
     start = body.index(start_marker) + len(start_marker)
     if end_marker is None:
@@ -159,16 +164,17 @@ def parse_context() -> list[dict[str, str]]:
 
     for index, match in enumerate(matches):
         slide_number = int(match.group(1))
-        title = match.group(2).strip()
+        title = remove_emdash(match.group(2).strip())
         timing = match.group(3).strip()
         start = match.end()
         end = matches[index + 1].start() if index + 1 < len(matches) else text.index("\n## Timing Summary")
         body = text[start:end].strip()
 
-        thought = extract_section(body, "**The Thought:**", "**Speaker Notes:**")
-        notes = extract_section(body, "**Speaker Notes:**", "**Bullet Reminders:**")
+        thought = remove_emdash(extract_section(body, "**The Thought:**", "**Speaker Notes:**"))
+        notes = remove_emdash(extract_section(body, "**Speaker Notes:**", "**Bullet Reminders:**"))
         bullets = body.split("**Bullet Reminders:**", 1)[1].strip()
         bullets = re.sub(r"\n+---\s*$", "", bullets).strip()
+        bullets = remove_emdash(bullets)
         filtered_lines = []
         for line in bullets.splitlines():
             lowered = line.lower()
@@ -200,7 +206,7 @@ def yaml_quote(value: str) -> str:
 
 
 def clean_notes(notes: str) -> str:
-    text = notes.strip()
+    text = remove_emdash(notes.strip())
     text = re.sub(r"^>\s*\"?", "", text)
     text = text.rstrip('"').strip()
     text = text.replace("\n", " ")
@@ -265,7 +271,7 @@ def build_review_section(slide: dict[str, str]) -> str:
 
 
 def chapter_meta(slide_number: int) -> dict[str, str]:
-    return CHAPTER_META.get(
+    meta = CHAPTER_META.get(
         slide_number,
         {
             "category": "Chapter",
@@ -275,6 +281,7 @@ def chapter_meta(slide_number: int) -> dict[str, str]:
             "narrative": "Use this chapter as a discussion guide with your team to convert ideas into concrete workflow improvements.",
         },
     )
+    return {key: remove_emdash(value) for key, value in meta.items()}
 
 
 def render_index(slides: list[dict[str, str]]) -> str:

@@ -29,7 +29,7 @@ Attendees can apply this immediately by improving repository guidance and tool b
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect **AGENTS.md** — how this repo prefers to be edited, **MCP servers** — wiki, observability, internal APIs as tools, **Per-task context packets** for non-trivial work, and Bad output is usually **context starvation** with your current delivery loop.
+For team discussion, use this chapter to connect **AGENTS.md** - how this repo prefers to be edited, **MCP servers** - wiki, observability, internal APIs as tools, **Per-task context packets** for non-trivial work, and Bad output is usually **context starvation** with your current delivery loop.
 
 In the session context, Context is engineered, not assumed. Three layers. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
 

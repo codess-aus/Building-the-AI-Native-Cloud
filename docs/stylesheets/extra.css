@@ -40,6 +40,23 @@ body {
   background: transparent;
 }
 
+.md-tabs__inner {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.md-tabs__list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  min-width: 100%;
+}
+
+.md-tabs__item {
+  flex: 0 0 auto;
+}
+
 .md-typeset {
   font-size: 0.98rem;
   line-height: 1.7;

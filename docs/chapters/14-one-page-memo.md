@@ -27,13 +27,17 @@ This chapter translates strategy into a durable operating artifact. A short, exp
 
 The attendee takeaway is practical: publish a v1 quickly, use it in real decisions, and improve it through cadence. Maturity comes from iteration under real delivery pressure.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect **AI-Native Success Criteria Memo v1**, Loop scope · Artifacts · Quality bars, Human responsibility · Anti-goals · Cadence, and Write it this week. Embarrass yourself slightly. with your current delivery loop.
+
+In the session context, Here is what Attendees are encouraged to take back. One page. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Publish a version-one memo with explicit success criteria and anti-goals, then review and revise it on a fixed cadence.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../13-seven-failure-modes/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../15-close-and-three-questions/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../13-seven-failure-modes/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../15-close-and-three-questions/">Next chapter</a>
 </div>

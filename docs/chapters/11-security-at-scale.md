@@ -27,13 +27,17 @@ Security posture must evolve with the actor model. Agents are execution identiti
 
 The conference companion takeaway is to make policy concrete early: branch scope, secret access, and tool permissions should be explicit, reviewable, and enforced before broad rollout.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect Agents are a **new identity class**, Scope: branches, MCP tools, secrets, environments, **Prompt injection** = the new SQL injection, and Least privilege, validated outputs, human gates on impact with your current delivery loop.
+
+In the session context, Security teams: an agent is a new identity class. It needs an identity, a scoped permission set, an audit trail, and a blast radius. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Define scope boundaries for branch access, secrets, and tool calls before rollout, and enforce them with policy controls.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../10-reliability-at-scale/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../12-governance-at-scale/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../10-reliability-at-scale/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../12-governance-at-scale/">Next chapter</a>
 </div>

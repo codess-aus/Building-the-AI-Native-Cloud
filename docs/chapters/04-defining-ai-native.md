@@ -27,13 +27,17 @@ Definitions matter because they influence architecture, risk posture, and team e
 
 For conference attendees, this is a useful standard to carry home: if contribution cannot be traced and reviewed, it should not be treated as production-ready regardless of how fast it was produced.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect AI is a **participant**, not a tool, Designed for, not bolted on, Every action leaves a trail, and Three words: **designing**, **participating**, **accountable** with your current delivery loop.
+
+In the session context, Here is the definition Attendees can leave with. AI-native software development means designing your delivery loop so AI isn't just helping developers, it's *participating* alongside them. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Add explicit ownership and auditability requirements to your team definition of done for any AI-assisted or agent-generated change.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../03-three-eras-side-by-side/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../05-the-six-stage-loop/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../03-three-eras-side-by-side/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../05-the-six-stage-loop/">Next chapter</a>
 </div>

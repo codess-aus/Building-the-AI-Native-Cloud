@@ -27,13 +27,17 @@ The quiet shift is that AI is already embedded in day-to-day engineering work, w
 
 For attendees, the practical takeaway is to stop treating AI usage as exceptional. Treat it as normal engineering work that needs the same clarity around ownership, verification, and accountability as any other production change.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect 2024 to 2026: a stack of compatible primitives, Agent mode, coding agents, MCP, Spec Kit, AGENTS.md, ~90% of technologists use AI at work (DORA 2025), and New question: is your *loop* designed for AI? with your current delivery loop.
+
+In the session context, Between the day Copilot suggested its first line of code and the day it started opening its own pull requests, something quietly shifted. It didn't arrive as one launch. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Map where AI is already present in your workflow, then identify one stage that still depends on informal process and make it explicit.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../01-title/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../03-three-eras-side-by-side/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../01-title/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../03-three-eras-side-by-side/">Next chapter</a>
 </div>

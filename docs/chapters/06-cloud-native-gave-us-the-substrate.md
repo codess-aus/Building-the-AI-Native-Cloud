@@ -27,13 +27,17 @@ This chapter reinforces that AI-native capability is built on top of cloud-nativ
 
 The attendee takeaway is to avoid skipping maturity steps. If baseline platform reliability or security is weak, adding higher agent autonomy usually amplifies fragility rather than accelerating outcomes.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect Cloud-native = the substrate, Ephemeral envs, GitOps, observability, zero-trust, AI-native **depends on** cloud-native maturity, and No shortcut: weak substrate, weak agents with your current delivery loop.
+
+In the session context, I want to be clear with this audience: AI-native does not throw away cloud-native. It depends on it. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Prioritize platform hygiene first: ephemeral environments, policy-based deployment, and observable services before broadening agent autonomy.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../05-the-six-stage-loop/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../07-new-workflows-spec-driven-development/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../05-the-six-stage-loop/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../07-new-workflows-spec-driven-development/">Next chapter</a>
 </div>

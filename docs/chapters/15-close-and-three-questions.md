@@ -27,13 +27,17 @@ The closing section is designed to make the content portable. Good conference id
 
 Use the reflection prompts as a repeatable discussion pattern to keep your team focused on trust, accountability, and long-term capability growth.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect Who decided *done*?, Which stage survives AI turning off?, Which failure mode bites first?, and **The AI-native cloud is a loop you design.** with your current delivery loop.
+
+In the session context, Three questions to carry home. One: on your team's last non-trivial change, who actually decided what *done* meant? Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Use the three closing questions in your next retrospective, architecture review, or release readiness discussion.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../14-one-page-memo/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../../">Back to home</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../14-one-page-memo/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../../">Back to home</a>
 </div>

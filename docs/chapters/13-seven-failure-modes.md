@@ -27,13 +27,17 @@ The value of failure modes is not prediction accuracy, it is preparedness. Teams
 
 For conference attendees, this chapter is a facilitation tool: use it to run a lightweight risk workshop and convert each likely failure mode into one concrete mitigation owned by the team.
 
+## What to review with your team
+
+For team discussion, focus on how this chapter can be translated into explicit workflow decisions and accountability points.
+
+In the session context, Seven failure modes will hit you in the first six months. I'll name them fast and you'll recognize at least two. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Pick the two failure modes most likely for your team and define countermeasures before broadening AI usage.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../12-governance-at-scale/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../14-one-page-memo/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../12-governance-at-scale/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../14-one-page-memo/">Next chapter</a>
 </div>

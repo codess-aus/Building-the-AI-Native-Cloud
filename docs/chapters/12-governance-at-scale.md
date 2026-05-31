@@ -27,13 +27,17 @@ Governance works best when it is designed as part of delivery, not layered in af
 
 Attendees can use this chapter to align legal, security, and platform perspectives around shared artifacts, auditability, and exception handling before scale introduces complexity.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect AGENTS.md is a **reviewed artifact**, Preserve run traces: model, tools, files, spec, Auditors will ask. Make the answer a link., and Write **anti-goals**, not just goals with your current delivery loop.
+
+In the session context, Governance is where most teams will stumble in 2026. Three practical moves. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Review governance artifacts in the same cadence as code quality artifacts, including run traces and policy exceptions.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../11-security-at-scale/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../13-seven-failure-modes/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../11-security-at-scale/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../13-seven-failure-modes/">Next chapter</a>
 </div>

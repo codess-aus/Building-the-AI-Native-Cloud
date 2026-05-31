@@ -27,13 +27,17 @@ The six-stage model turns a vague delivery idea into a system that teams can ins
 
 Attendees can use this as a workshop artifact with engineering and platform teams: map each stage to current tooling and identify where missing artifacts or unclear ownership create avoidable risk.
 
+## What to review with your team
+
+For team discussion, use this chapter to connect New artifact: **spec** and New arrow: **feedback to spec** with your current delivery loop.
+
+In the session context, Six stages. Intent: captured deliberately, not in a Slack thread. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Document your loop from intent to delivery and add one concrete quality gate to each stage.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../04-defining-ai-native/">Previous chapter</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../06-cloud-native-gave-us-the-substrate/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../04-defining-ai-native/">Previous chapter</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../06-cloud-native-gave-us-the-substrate/">Next chapter</a>
 </div>

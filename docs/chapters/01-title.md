@@ -27,13 +27,17 @@ The opening challenge is simple: if AI capability keeps accelerating, governance
 
 As you revisit this with your team, use it as a framing conversation: what standards stay fixed regardless of tooling, and where does your current workflow still assume purely human execution?
 
+## What to review with your team
+
+For team discussion, use this chapter to connect Building the AI-Native Cloud and From cloud-native to AI-native with your current delivery loop.
+
+In the session context, This chapter explores building the AI-native cloud. Not AI *in* the cloud, not AI *on top of* the cloud, but a cloud where AI agents are first-class participants in how we build, ship, and run software. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+
 ## Put this into practice
 
 Use the trust question at the start of planning, architecture reviews, and go-live decisions so the same standard is applied throughout delivery.
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="../../">Back to home</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="../02-the-quiet-shift/">Next chapter</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="../../">Back to home</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../02-the-quiet-shift/">Next chapter</a>
 </div>

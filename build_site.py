@@ -199,6 +199,71 @@ def yaml_quote(value: str) -> str:
     return value.replace('"', '\\"')
 
 
+def clean_notes(notes: str) -> str:
+    text = notes.strip()
+    text = re.sub(r"^>\s*\"?", "", text)
+    text = text.rstrip('"').strip()
+    text = text.replace("\n", " ")
+    text = re.sub(r"\s+", " ", text)
+    replacements = {
+        "Good morning. ": "",
+        "I'm here to talk about": "This chapter explores",
+        "I want to convince you that": "The key point is that",
+        "I want you to leave with": "Attendees can leave with",
+        "I want you to": "Attendees are encouraged to",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text.strip()
+
+
+def first_sentences(text: str, count: int = 2) -> str:
+    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    if not sentences:
+        return text
+    return " ".join(sentences[:count]).strip()
+
+
+def format_phrase_list(items: list[str]) -> str:
+    if not items:
+        return ""
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return f"{items[0]} and {items[1]}"
+    return ", ".join(items[:-1]) + f", and {items[-1]}"
+
+
+def build_review_section(slide: dict[str, str]) -> str:
+    bullets = []
+    for line in slide["bullets"].splitlines():
+        line = line.strip()
+        if line.startswith("- "):
+            bullets.append(line[2:].strip())
+
+    cleaned_notes = clean_notes(slide["notes"])
+    note_excerpt = first_sentences(cleaned_notes, count=2)
+
+    if bullets:
+        bullet_text = format_phrase_list(bullets)
+        paragraph_one = (
+            "For team discussion, use this chapter to connect "
+            f"{bullet_text} with your current delivery loop."
+        )
+    else:
+        paragraph_one = (
+            "For team discussion, focus on how this chapter can be translated "
+            "into explicit workflow decisions and accountability points."
+        )
+
+    paragraph_two = (
+        f"In the session context, {note_excerpt} "
+        "Use that framing to align engineering, platform, and governance stakeholders on concrete next steps."
+    )
+
+    return f"{paragraph_one}\n\n{paragraph_two}"
+
+
 def chapter_meta(slide_number: int) -> dict[str, str]:
     return CHAPTER_META.get(
         slide_number,
@@ -276,6 +341,7 @@ def render_chapter(
     next_label: str,
 ) -> str:
     meta = chapter_meta(slide["number_int"])
+    review_section = build_review_section(slide)
     return textwrap.dedent(
         f"""---
 title: "{slide['number']} · {yaml_quote(slide['page_title'])}"
@@ -304,15 +370,17 @@ description: "{yaml_quote(meta['subtitle'])}"
 
 {meta['narrative']}
 
+## What to review with your team
+
+{review_section}
+
 ## Put this into practice
 
 {meta['practice']}
 
-<div class="chapter-nav" markdown>
-
-<a class="chapter-nav__button chapter-nav__button--secondary" href="{prev_target}">{prev_label}</a>
-<a class="chapter-nav__button chapter-nav__button--primary" href="{next_target}">{next_label}</a>
-
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--secondary" href="{prev_target}">{prev_label}</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="{next_target}">{next_label}</a>
 </div>
 """
     ).strip() + "\n"

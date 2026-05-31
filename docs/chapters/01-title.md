@@ -1,13 +1,13 @@
 ---
 title: "01 · Building the AI-Native Cloud"
-description: "Set the frame: this is not a Copilot demo, this is an architecture conversation."
+description: "Why this conversation matters now, and how to evaluate AI-native delivery through a trust-first lens."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/0-title.png" alt="Hero illustration for chapter 01, Building the AI-Native Cloud">
+<img src="../../assets/0-title.png" alt="Hero illustration for chapter 01, Building the AI-Native Cloud">
 
 <div class="sn-cat">Opening</div>
 
@@ -15,7 +15,7 @@ description: "Set the frame: this is not a Copilot demo, this is an architecture
 
 # Building the AI-Native Cloud
 
-*Set the frame: this is not a Copilot demo, this is an architecture conversation.*
+*Why this conversation matters now, and how to evaluate AI-native delivery through a trust-first lens.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ As you revisit this with your team, use it as a framing conversation: what stand
 ## Put this into practice
 
 Use the trust question at the start of planning, architecture reviews, and go-live decisions so the same standard is applied throughout delivery.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../../">Back to home</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../02-the-quiet-shift/">Next chapter</a>
+
+</div>

@@ -299,6 +299,56 @@ body {
   border-bottom-color: rgba(127, 127, 127, 0.25);
 }
 
+.chapter-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.chapter-nav__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.7rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.chapter-nav__button:hover {
+  transform: translateY(-1px);
+}
+
+.chapter-nav__button--primary {
+  background: var(--ai-teal);
+  color: var(--ai-paper);
+  box-shadow: 0 0.6rem 1.2rem rgba(14, 124, 134, 0.2);
+}
+
+.chapter-nav__button--secondary {
+  background: transparent;
+  color: var(--md-default-fg-color);
+  border-color: rgba(127, 127, 127, 0.3);
+}
+
+[data-md-color-scheme="slate"] .chapter-nav__button--primary {
+  color: var(--ai-ink);
+  background: #7fe1dd;
+}
+
+[data-md-color-scheme="slate"] .chapter-nav__button--secondary {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.chapter-nav__button:focus-visible {
+  outline: 3px solid var(--ai-teal);
+  outline-offset: 3px;
+}
+
 .chapter-panel {
   margin-top: 1.4rem;
   padding: 1rem 1.1rem;
@@ -330,5 +380,9 @@ body {
 
   .button {
     width: 100%;
+  }
+
+  .chapter-nav {
+    grid-template-columns: 1fr;
   }
 }

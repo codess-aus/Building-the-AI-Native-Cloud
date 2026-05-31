@@ -1,13 +1,13 @@
 ---
 title: "09 · New Operating Model: Humans + Agents"
-description: "Roles change. Headcount doesn't have to shrink. Ambition should expand."
+description: "How teams can increase ambition and leverage by redesigning roles around intent and accountability."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/8-humansandagents.png" alt="Hero illustration for chapter 09, New Operating Model: Humans + Agents">
+<img src="../../assets/8-humansandagents.png" alt="Hero illustration for chapter 09, New Operating Model: Humans + Agents">
 
 <div class="sn-cat">Operating Model</div>
 
@@ -15,7 +15,7 @@ description: "Roles change. Headcount doesn't have to shrink. Ambition should ex
 
 # New Operating Model: Humans + Agents
 
-*Roles change. Headcount doesn't have to shrink. Ambition should expand.*
+*How teams can increase ambition and leverage by redesigning roles around intent and accountability.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ The practical conference takeaway is role clarity: teams need people who can def
 ## Put this into practice
 
 Redefine role expectations to include specification, context curation, and review of intent, not only implementation throughput.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../08-new-workflows-context-engineering/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../10-reliability-at-scale/">Next chapter</a>
+
+</div>

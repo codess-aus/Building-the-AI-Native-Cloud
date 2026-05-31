@@ -1,13 +1,13 @@
 ---
 title: "07 · New Workflows: Spec-Driven Development"
-description: "The spec is the durable artifact. Code is downstream."
+description: "How short, explicit specs improve alignment before implementation starts."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/6-sdd.png" alt="Hero illustration for chapter 07, New Workflows: Spec-Driven Development">
+<img src="../../assets/6-sdd.png" alt="Hero illustration for chapter 07, New Workflows: Spec-Driven Development">
 
 <div class="sn-cat">Workflow</div>
 
@@ -15,7 +15,7 @@ description: "The spec is the durable artifact. Code is downstream."
 
 # New Workflows: Spec-Driven Development
 
-*The spec is the durable artifact. Code is downstream.*
+*How short, explicit specs improve alignment before implementation starts.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ As a conference companion takeaway, think of the spec as the minimum shared cont
 ## Put this into practice
 
 Use a short spec template with goal, user impact, success criteria, and out-of-scope for every non-trivial change.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../06-cloud-native-gave-us-the-substrate/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../08-new-workflows-context-engineering/">Next chapter</a>
+
+</div>

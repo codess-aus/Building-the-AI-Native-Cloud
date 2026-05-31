@@ -1,13 +1,13 @@
 ---
 title: "13 · Seven Failure Modes"
-description: "Pattern-match these now. Save yourself a quarter."
+description: "Recognizing common failure patterns early and turning them into concrete safeguards."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/12-failure.png" alt="Hero illustration for chapter 13, Seven Failure Modes">
+<img src="../../assets/12-failure.png" alt="Hero illustration for chapter 13, Seven Failure Modes">
 
 <div class="sn-cat">Failure Modes</div>
 
@@ -15,7 +15,7 @@ description: "Pattern-match these now. Save yourself a quarter."
 
 # Seven Failure Modes
 
-*Pattern-match these now. Save yourself a quarter.*
+*Recognizing common failure patterns early and turning them into concrete safeguards.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ For conference attendees, this chapter is a facilitation tool: use it to run a l
 ## Put this into practice
 
 Pick the two failure modes most likely for your team and define countermeasures before broadening AI usage.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../12-governance-at-scale/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../14-one-page-memo/">Next chapter</a>
+
+</div>

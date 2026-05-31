@@ -1,13 +1,13 @@
 ---
 title: "05 · The Six-Stage Loop"
-description: "Show the anatomy. This is the spine of the rest of the talk."
+description: "How to break delivery into explicit stages so quality and risk are managed on purpose."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/4-loop.png" alt="Hero illustration for chapter 05, The Six-Stage Loop">
+<img src="../../assets/4-loop.png" alt="Hero illustration for chapter 05, The Six-Stage Loop">
 
 <div class="sn-cat">Foundation</div>
 
@@ -15,7 +15,7 @@ description: "Show the anatomy. This is the spine of the rest of the talk."
 
 # The Six-Stage Loop
 
-*Show the anatomy. This is the spine of the rest of the talk.*
+*How to break delivery into explicit stages so quality and risk are managed on purpose.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ Attendees can use this as a workshop artifact with engineering and platform team
 ## Put this into practice
 
 Document your loop from intent to delivery and add one concrete quality gate to each stage.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../04-defining-ai-native/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../06-cloud-native-gave-us-the-substrate/">Next chapter</a>
+
+</div>

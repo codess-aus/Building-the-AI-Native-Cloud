@@ -1,13 +1,13 @@
 ---
 title: "02 · The Quiet Shift"
-description: "Something already changed. Most teams haven't noticed."
+description: "What has already changed in software delivery, and why intentional operating models now matter."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/1-quiet.png" alt="Hero illustration for chapter 02, The Quiet Shift">
+<img src="../../assets/1-quiet.png" alt="Hero illustration for chapter 02, The Quiet Shift">
 
 <div class="sn-cat">Opening</div>
 
@@ -15,7 +15,7 @@ description: "Something already changed. Most teams haven't noticed."
 
 # The Quiet Shift
 
-*Something already changed. Most teams haven't noticed.*
+*What has already changed in software delivery, and why intentional operating models now matter.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ For attendees, the practical takeaway is to stop treating AI usage as exceptiona
 ## Put this into practice
 
 Map where AI is already present in your workflow, then identify one stage that still depends on informal process and make it explicit.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../01-title/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../03-three-eras-side-by-side/">Next chapter</a>
+
+</div>

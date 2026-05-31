@@ -1,13 +1,13 @@
 ---
 title: "10 · Reliability at Scale"
-description: "Reliability isn't threatened by agents. It's threatened by *invisible* agents."
+description: "Building reliability through traceability, layered verification, and clear review boundaries."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/9-reliability.png" alt="Hero illustration for chapter 10, Reliability at Scale">
+<img src="../../assets/9-reliability.png" alt="Hero illustration for chapter 10, Reliability at Scale">
 
 <div class="sn-cat">Reliability</div>
 
@@ -15,7 +15,7 @@ description: "Reliability isn't threatened by agents. It's threatened by *invisi
 
 # Reliability at Scale
 
-*Reliability isn't threatened by agents. It's threatened by *invisible* agents.*
+*Building reliability through traceability, layered verification, and clear review boundaries.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ For attendees, this chapter is an operational reminder: reliability is a socio-t
 ## Put this into practice
 
 Capture model version, tools used, files touched, and test evidence on every agent-generated pull request.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../09-new-operating-model-humans-agents/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../11-security-at-scale/">Next chapter</a>
+
+</div>

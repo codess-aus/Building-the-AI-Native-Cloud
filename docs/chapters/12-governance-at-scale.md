@@ -1,13 +1,13 @@
 ---
 title: "12 · Governance at Scale"
-description: "Governance designed on day one is cheap. Governance bolted on after an incident is expensive."
+description: "Designing governance early so speed and accountability can scale together."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/11-governance.png" alt="Hero illustration for chapter 12, Governance at Scale">
+<img src="../../assets/11-governance.png" alt="Hero illustration for chapter 12, Governance at Scale">
 
 <div class="sn-cat">Governance</div>
 
@@ -15,7 +15,7 @@ description: "Governance designed on day one is cheap. Governance bolted on afte
 
 # Governance at Scale
 
-*Governance designed on day one is cheap. Governance bolted on after an incident is expensive.*
+*Designing governance early so speed and accountability can scale together.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ Attendees can use this chapter to align legal, security, and platform perspectiv
 ## Put this into practice
 
 Review governance artifacts in the same cadence as code quality artifacts, including run traces and policy exceptions.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../11-security-at-scale/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../13-seven-failure-modes/">Next chapter</a>
+
+</div>

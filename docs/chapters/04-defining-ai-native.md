@@ -1,13 +1,13 @@
 ---
 title: "04 · Defining AI-Native"
-description: "A definition you can hold a team accountable to."
+description: "A shared definition your team can use to align delivery decisions, controls, and accountability."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/3-ainative.png" alt="Hero illustration for chapter 04, Defining AI-Native">
+<img src="../../assets/3-ainative.png" alt="Hero illustration for chapter 04, Defining AI-Native">
 
 <div class="sn-cat">Foundation</div>
 
@@ -15,7 +15,7 @@ description: "A definition you can hold a team accountable to."
 
 # Defining AI-Native
 
-*A definition you can hold a team accountable to.*
+*A shared definition your team can use to align delivery decisions, controls, and accountability.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ For conference attendees, this is a useful standard to carry home: if contributi
 ## Put this into practice
 
 Add explicit ownership and auditability requirements to your team definition of done for any AI-assisted or agent-generated change.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../03-three-eras-side-by-side/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../05-the-six-stage-loop/">Next chapter</a>
+
+</div>

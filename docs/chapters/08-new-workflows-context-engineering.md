@@ -1,13 +1,13 @@
 ---
 title: "08 · New Workflows: Context Engineering"
-description: "Context is the second-most-important investment after the spec."
+description: "Why context quality drives output quality, and how to engineer context deliberately."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/7-context.png" alt="Hero illustration for chapter 08, New Workflows: Context Engineering">
+<img src="../../assets/7-context.png" alt="Hero illustration for chapter 08, New Workflows: Context Engineering">
 
 <div class="sn-cat">Workflow</div>
 
@@ -15,7 +15,7 @@ description: "Context is the second-most-important investment after the spec."
 
 # New Workflows: Context Engineering
 
-*Context is the second-most-important investment after the spec.*
+*Why context quality drives output quality, and how to engineer context deliberately.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ Attendees can apply this immediately by improving repository guidance and tool b
 ## Put this into practice
 
 Create or refine AGENTS.md and package context for complex tasks so generated changes reflect system-level intent, not just local code patterns.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../07-new-workflows-spec-driven-development/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../09-new-operating-model-humans-agents/">Next chapter</a>
+
+</div>

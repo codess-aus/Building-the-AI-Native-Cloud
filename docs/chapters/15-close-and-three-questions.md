@@ -1,13 +1,13 @@
 ---
 title: "15 · Close and Three Questions"
-description: "Leave them with questions they cannot un-ask."
+description: "Reflection prompts to help your team carry trust and accountability into day-to-day delivery."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/14-questions.png" alt="Hero illustration for chapter 15, Close and Three Questions">
+<img src="../../assets/14-questions.png" alt="Hero illustration for chapter 15, Close and Three Questions">
 
 <div class="sn-cat">Closing</div>
 
@@ -15,7 +15,7 @@ description: "Leave them with questions they cannot un-ask."
 
 # Close and Three Questions
 
-*Leave them with questions they cannot un-ask.*
+*Reflection prompts to help your team carry trust and accountability into day-to-day delivery.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ Use the reflection prompts as a repeatable discussion pattern to keep your team 
 ## Put this into practice
 
 Use the three closing questions in your next retrospective, architecture review, or release readiness discussion.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../14-one-page-memo/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../../">Back to home</a>
+
+</div>

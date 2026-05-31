@@ -1,13 +1,13 @@
 ---
 title: "11 · Security at Scale"
-description: "Agents are a new identity class. Treat them like one."
+description: "Treating agents as execution identities with explicit boundaries and least-privilege controls."
 ---
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../index.md">← Back</a>
+<a class="sn-back" href="../../">← Back</a>
 
-<img src="../assets/10-security.png" alt="Hero illustration for chapter 11, Security at Scale">
+<img src="../../assets/10-security.png" alt="Hero illustration for chapter 11, Security at Scale">
 
 <div class="sn-cat">Security</div>
 
@@ -15,7 +15,7 @@ description: "Agents are a new identity class. Treat them like one."
 
 # Security at Scale
 
-*Agents are a new identity class. Treat them like one.*
+*Treating agents as execution identities with explicit boundaries and least-privilege controls.*
 
 ## Why this chapter matters
 
@@ -30,3 +30,10 @@ The conference companion takeaway is to make policy concrete early: branch scope
 ## Put this into practice
 
 Define scope boundaries for branch access, secrets, and tool calls before rollout, and enforce them with policy controls.
+
+<div class="chapter-nav" markdown>
+
+<a class="chapter-nav__button chapter-nav__button--secondary" href="../10-reliability-at-scale/">Previous chapter</a>
+<a class="chapter-nav__button chapter-nav__button--primary" href="../12-governance-at-scale/">Next chapter</a>
+
+</div>

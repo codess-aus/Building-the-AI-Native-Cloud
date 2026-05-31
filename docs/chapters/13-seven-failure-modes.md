@@ -1,33 +1,32 @@
 ---
-title: 13. Seven Failure Modes
-description: Pattern-match these now. Save yourself a quarter.
+title: "13 · Seven Failure Modes"
+description: "Pattern-match these now. Save yourself a quarter."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 13 · 16:30 to 18:00</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Seven Failure Modes](../assets/12-failure.png)
+<img src="../assets/12-failure.png" alt="Hero illustration for chapter 13, Seven Failure Modes">
+
+<div class="sn-cat">Failure Modes</div>
+
 </div>
 
-## The Thought
+# Seven Failure Modes
 
-Pattern-match these now. Save yourself a quarter.
+*Pattern-match these now. Save yourself a quarter.*
 
-## Slide Copy
+## Why this chapter matters
 
-1. Vibe-driven development → write a spec
-2. Context starvation → AGENTS.md + MCP
-3. Trust drift → random deep reviews
-4. Agent ≠ loop → invest in artifacts
-5. Invisible work → preserve traces
-6. Deferred governance → decide in week one
-7. Productivity ≠ capability → measure artifacts
+Known failure patterns help teams avoid repeating preventable mistakes. Naming these patterns builds shared vigilance across engineering, security, and operations.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Seven failure modes will hit you in the first six months. I'll name them fast and you'll recognize at least two. *Vibe-driven development*: plausible diff, hidden bug. Fix: no agent run without a spec. *Context starvation*: locally plausible, globally wrong. Fix: invest in AGENTS.md and MCP. *Trust drift*: you start skimming. Fix: random deep-review sampling. *Mistaking the agent for the loop*: productivity bump, declare victory, stop investing. Fix: the artifacts make the loop better, the agent is one participant. *Invisible agent work*: future incident waiting. Fix: preserve traces. *Deferring governance*: locking down after a near-miss costs more. Fix: decide permissions in week one. *Confusing productivity with capability*: faster typing is not a better loop. Fix: measure artifact quality, not throughput."
+The value of failure modes is not prediction accuracy, it is preparedness. Teams that can name likely failure patterns earlier can design practical safeguards before those risks materialize in production.
 
-</details>
+For conference attendees, this chapter is a facilitation tool: use it to run a lightweight risk workshop and convert each likely failure mode into one concrete mitigation owned by the team.
+
+## Put this into practice
+
+Pick the two failure modes most likely for your team and define countermeasures before broadening AI usage.

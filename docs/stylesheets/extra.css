@@ -233,11 +233,11 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.chapter-hero {
+.sn-hero {
   margin: 0 0 1.5rem;
 }
 
-.chapter-hero img {
+.sn-hero img {
   display: block;
   width: 100%;
   border-radius: 1.25rem;
@@ -245,21 +245,70 @@ body {
   box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
 }
 
-.speaker-notes {
-  margin-top: 1.5rem;
+.sn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.65rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sn-cat {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  padding: 0.34rem 0.75rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--ai-paper);
+  background: var(--ai-teal);
+}
+
+[data-md-color-scheme="slate"] .sn-cat {
+  color: var(--ai-ink);
+  background: #7fe1dd;
+}
+
+.md-typeset h1 + p em {
+  display: inline-block;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset h2 {
+  margin-top: 1.9rem;
+}
+
+.md-typeset blockquote {
+  border-left-color: var(--ai-teal);
+}
+
+.md-typeset ul {
+  padding-left: 1.15rem;
+}
+
+.md-typeset li::marker {
+  color: var(--ai-lime);
+}
+
+.md-typeset hr {
+  border-bottom-color: rgba(127, 127, 127, 0.25);
+}
+
+.chapter-panel {
+  margin-top: 1.4rem;
   padding: 1rem 1.1rem;
   border-radius: 1rem;
   border: 1px solid rgba(127, 127, 127, 0.16);
   background: rgba(14, 124, 134, 0.05);
 }
 
-[data-md-color-scheme="slate"] .speaker-notes {
+[data-md-color-scheme="slate"] .chapter-panel {
   background: rgba(255, 255, 255, 0.03);
-}
-
-.speaker-notes summary {
-  cursor: pointer;
-  font-weight: 700;
 }
 
 @media (max-width: 900px) {

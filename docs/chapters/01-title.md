@@ -1,29 +1,32 @@
 ---
-title: 01. Building the AI-Native Cloud
-description: Set the frame: this is not a Copilot demo, this is an architecture conversation.
+title: "01 · Building the AI-Native Cloud"
+description: "Set the frame: this is not a Copilot demo, this is an architecture conversation."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 01 · 0:00 to 0:30</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Title](../assets/0-title.png)
+<img src="../assets/0-title.png" alt="Hero illustration for chapter 01, Building the AI-Native Cloud">
+
+<div class="sn-cat">Opening</div>
+
 </div>
 
-## The Thought
+# Building the AI-Native Cloud
 
-Set the frame: this is not a Copilot demo, this is an architecture conversation.
+*Set the frame: this is not a Copilot demo, this is an architecture conversation.*
 
-## Slide Copy
+## Why this chapter matters
 
-- Building the AI-Native Cloud
-- From cloud-native to AI-native
-- [Your name, role, handle]
+This opening chapter sets the frame for the talk: AI-native delivery is not about adding one more tool, it is about changing how teams decide, build, verify, and ship.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Good morning. I'm here to talk about building the AI-native cloud. Not AI *in* the cloud, not AI *on top of* the cloud, but a cloud where AI agents are first-class participants in how we build, ship, and run software. In the next 20 minutes I want to convince you that the shift from cloud-native to AI-native is the same magnitude of change as the shift from on-prem to cloud, and most of us are still bolting AI onto an operating model that was never designed for it."
+The opening challenge is simple: if AI capability keeps accelerating, governance and delivery discipline must accelerate with it. This chapter invites you to evaluate your current practices through that lens, not through vendor claims or feature announcements.
 
-</details>
+As you revisit this with your team, use it as a framing conversation: what standards stay fixed regardless of tooling, and where does your current workflow still assume purely human execution?
+
+## Put this into practice
+
+Use the trust question at the start of planning, architecture reviews, and go-live decisions so the same standard is applied throughout delivery.

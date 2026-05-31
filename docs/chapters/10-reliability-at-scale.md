@@ -1,30 +1,32 @@
 ---
-title: 10. Reliability at Scale
-description: Reliability isn't threatened by agents. It's threatened by *invisible* agents.
+title: "10 · Reliability at Scale"
+description: "Reliability isn't threatened by agents. It's threatened by *invisible* agents."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 10 · 12:00 to 13:30</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Reliability at Scale](../assets/9-reliability.png)
+<img src="../assets/9-reliability.png" alt="Hero illustration for chapter 10, Reliability at Scale">
+
+<div class="sn-cat">Reliability</div>
+
 </div>
 
-## The Thought
+# Reliability at Scale
 
-Reliability isn't threatened by agents. It's threatened by *invisible* agents.
+*Reliability isn't threatened by agents. It's threatened by *invisible* agents.*
 
-## Slide Copy
+## Why this chapter matters
 
-- No invisible work: **trace every run**
-- Layered verification: tests → evaluators → policy → human
-- Sample 1 in 10 agent PRs for deep review
-- Trust calibration is a discipline, not a feeling
+Reliability requires traceability. Teams need to understand why a change happened, how it was validated, and what signals informed release decisions.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Reliability in an AI-native cloud rests on one principle: **no invisible work**. Every agent run leaves a trace. Model version. Tools called. Files touched. Spec citation per commit. When something breaks at 2am, the on-call engineer has to be able to reconstruct *why* a change was made, not just *what* changed. Verification is layered, cheap to expensive: deterministic tests first, then AI evaluators checking the diff against the spec's success criteria, then policy gates including Advanced Security and Copilot Autofix, then human review focused on intent and integration. The funnel design is what makes the expensive layers economic. Treat agent PRs like any other contributor: sample one in ten for deep review, chosen at random. The moment you start skimming because they *look right*, you have drifted."
+Reliability in AI-native systems depends on visibility. If teams cannot reconstruct why a generated change was made and how it passed verification, they cannot operate confidently at scale.
 
-</details>
+For attendees, this chapter is an operational reminder: reliability is a socio-technical property. Good traces, layered validation, and clear review boundaries are as important as test pass rates.
+
+## Put this into practice
+
+Capture model version, tools used, files touched, and test evidence on every agent-generated pull request.

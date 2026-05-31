@@ -29,6 +29,99 @@ SOURCE_IMAGES = [
 
 SLIDE_HEADING = re.compile(r"^## Slide (\d+) — (.+?) \((.+?)\)$", re.MULTILINE)
 
+CHAPTER_META = {
+    1: {
+        "category": "Opening",
+        "why": "This opening chapter sets the frame for the talk: AI-native delivery is not about adding one more tool, it is about changing how teams decide, build, verify, and ship.",
+        "narrative": "The opening challenge is simple: if AI capability keeps accelerating, governance and delivery discipline must accelerate with it. This chapter invites you to evaluate your current practices through that lens, not through vendor claims or feature announcements.\n\nAs you revisit this with your team, use it as a framing conversation: what standards stay fixed regardless of tooling, and where does your current workflow still assume purely human execution?",
+        "practice": "Use the trust question at the start of planning, architecture reviews, and go-live decisions so the same standard is applied throughout delivery.",
+    },
+    2: {
+        "category": "Opening",
+        "why": "Most teams already use AI daily. The shift now is from ad-hoc usage to an intentional operating model where AI work is part of the delivery system.",
+        "narrative": "The quiet shift is that AI is already embedded in day-to-day engineering work, whether or not organizations have formalized policy around it. What changed first was behavior; governance and process are now catching up.\n\nFor attendees, the practical takeaway is to stop treating AI usage as exceptional. Treat it as normal engineering work that needs the same clarity around ownership, verification, and accountability as any other production change.",
+        "practice": "Map where AI is already present in your workflow, then identify one stage that still depends on informal process and make it explicit.",
+    },
+    3: {
+        "category": "Foundation",
+        "why": "Shared language reduces confusion. This chapter helps teams distinguish traditional, AI-assisted, and AI-native ways of working without overclaiming maturity.",
+        "narrative": "This chapter is a positioning tool. It helps teams avoid speaking past each other by defining concrete differences between traditional, AI-assisted, and AI-native loops.\n\nUse it to make planning discussions more honest: if the loop has not changed, you are optimizing execution speed, not redesigning delivery. That distinction is useful, especially when prioritizing platform and governance investments.",
+        "practice": "Choose the row in the maturity table that best describes your current loop and define one change needed to move to the next stage.",
+    },
+    4: {
+        "category": "Foundation",
+        "why": "A practical definition keeps teams aligned. AI-native delivery treats AI systems as accountable participants, not as hidden automation behind developer tools.",
+        "narrative": "Definitions matter because they influence architecture, risk posture, and team expectations. Here, AI-native means AI participates in the workflow in ways that can be reviewed and governed, not merely assisted by autocomplete.\n\nFor conference attendees, this is a useful standard to carry home: if contribution cannot be traced and reviewed, it should not be treated as production-ready regardless of how fast it was produced.",
+        "practice": "Add explicit ownership and auditability requirements to your team definition of done for any AI-assisted or agent-generated change.",
+    },
+    5: {
+        "category": "Foundation",
+        "why": "The six-stage loop shows where quality is created and where risk is introduced. Making each stage explicit improves handoffs and governance.",
+        "narrative": "The six-stage model turns a vague delivery idea into a system that teams can inspect and improve. Instead of treating development as one continuous stream, it highlights where decisions are made and where controls should exist.\n\nAttendees can use this as a workshop artifact with engineering and platform teams: map each stage to current tooling and identify where missing artifacts or unclear ownership create avoidable risk.",
+        "practice": "Document your loop from intent to delivery and add one concrete quality gate to each stage.",
+    },
+    6: {
+        "category": "Foundation",
+        "why": "AI-native delivery depends on strong cloud-native engineering fundamentals. Teams with mature platform practices can adopt agents more safely and effectively.",
+        "narrative": "This chapter reinforces that AI-native capability is built on top of cloud-native discipline. Containers, policy controls, observability, and secure environments are not optional extras; they are preconditions for safe autonomy.\n\nThe attendee takeaway is to avoid skipping maturity steps. If baseline platform reliability or security is weak, adding higher agent autonomy usually amplifies fragility rather than accelerating outcomes.",
+        "practice": "Prioritize platform hygiene first: ephemeral environments, policy-based deployment, and observable services before broadening agent autonomy.",
+    },
+    7: {
+        "category": "Workflow",
+        "why": "Spec-driven development reduces rework and ambiguity. It gives humans and agents a shared contract before implementation starts.",
+        "narrative": "Spec-driven work shifts debate to the right moment: before code is written. This reduces ambiguous implementation paths and helps both humans and AI systems align on expected outcomes.\n\nAs a conference companion takeaway, think of the spec as the minimum shared contract for change. Even brief specs can dramatically improve review quality, handoffs, and post-release accountability.",
+        "practice": "Use a short spec template with goal, user impact, success criteria, and out-of-scope for every non-trivial change.",
+    },
+    8: {
+        "category": "Workflow",
+        "why": "Context quality determines output quality. AI systems perform best when repository conventions, tool access, and task intent are made explicit.",
+        "narrative": "When output is locally plausible but globally wrong, the root cause is often context quality rather than model quality. This chapter highlights context as an engineering asset that should be curated deliberately.\n\nAttendees can apply this immediately by improving repository guidance and tool boundaries so generated changes reflect architectural intent, operational constraints, and domain standards.",
+        "practice": "Create or refine AGENTS.md and package context for complex tasks so generated changes reflect system-level intent, not just local code patterns.",
+    },
+    9: {
+        "category": "Operating Model",
+        "why": "The goal is not smaller ambition with fewer people. The opportunity is higher-leverage engineering where humans focus on decisions, constraints, and outcomes.",
+        "narrative": "This chapter reframes the organizational question from replacement to leverage. High-performing teams use AI to increase scope and quality of what they can responsibly deliver, not just to cut implementation time.\n\nThe practical conference takeaway is role clarity: teams need people who can define intent, shape constraints, and review integrated outcomes, not only produce diffs quickly.",
+        "practice": "Redefine role expectations to include specification, context curation, and review of intent, not only implementation throughput.",
+    },
+    10: {
+        "category": "Reliability",
+        "why": "Reliability requires traceability. Teams need to understand why a change happened, how it was validated, and what signals informed release decisions.",
+        "narrative": "Reliability in AI-native systems depends on visibility. If teams cannot reconstruct why a generated change was made and how it passed verification, they cannot operate confidently at scale.\n\nFor attendees, this chapter is an operational reminder: reliability is a socio-technical property. Good traces, layered validation, and clear review boundaries are as important as test pass rates.",
+        "practice": "Capture model version, tools used, files touched, and test evidence on every agent-generated pull request.",
+    },
+    11: {
+        "category": "Security",
+        "why": "Agents should be treated as a distinct identity class with constrained permissions and auditable behavior. Security outcomes depend on least privilege by design.",
+        "narrative": "Security posture must evolve with the actor model. Agents are execution identities that need explicit boundaries, not implicit trust inherited from developer workflows.\n\nThe conference companion takeaway is to make policy concrete early: branch scope, secret access, and tool permissions should be explicit, reviewable, and enforced before broad rollout.",
+        "practice": "Define scope boundaries for branch access, secrets, and tool calls before rollout, and enforce them with policy controls.",
+    },
+    12: {
+        "category": "Governance",
+        "why": "Governance is most effective when introduced early. Waiting until incidents occur makes controls more costly and less trusted by delivery teams.",
+        "narrative": "Governance works best when it is designed as part of delivery, not layered in after incidents. Early governance establishes expectations and reduces friction between engineering speed and risk management.\n\nAttendees can use this chapter to align legal, security, and platform perspectives around shared artifacts, auditability, and exception handling before scale introduces complexity.",
+        "practice": "Review governance artifacts in the same cadence as code quality artifacts, including run traces and policy exceptions.",
+    },
+    13: {
+        "category": "Failure Modes",
+        "why": "Known failure patterns help teams avoid repeating preventable mistakes. Naming these patterns builds shared vigilance across engineering, security, and operations.",
+        "narrative": "The value of failure modes is not prediction accuracy, it is preparedness. Teams that can name likely failure patterns earlier can design practical safeguards before those risks materialize in production.\n\nFor conference attendees, this chapter is a facilitation tool: use it to run a lightweight risk workshop and convert each likely failure mode into one concrete mitigation owned by the team.",
+        "practice": "Pick the two failure modes most likely for your team and define countermeasures before broadening AI usage.",
+    },
+    14: {
+        "category": "Action Plan",
+        "why": "A one-page implementation memo turns ideas into execution. It creates a concrete baseline for accountability, measurement, and iteration.",
+        "narrative": "This chapter translates strategy into a durable operating artifact. A short, explicit memo is easier to review, teach, and update than broad slide commitments.\n\nThe attendee takeaway is practical: publish a v1 quickly, use it in real decisions, and improve it through cadence. Maturity comes from iteration under real delivery pressure.",
+        "practice": "Publish a version-one memo with explicit success criteria and anti-goals, then review and revise it on a fixed cadence.",
+    },
+    15: {
+        "category": "Closing",
+        "why": "The closing chapter helps teams leave with practical reflection questions that translate conference insight into immediate action.",
+        "narrative": "The closing section is designed to make the content portable. Good conference ideas become valuable only when they are reused in planning meetings, architecture reviews, and retrospectives.\n\nUse the reflection prompts as a repeatable discussion pattern to keep your team focused on trust, accountability, and long-term capability growth.",
+        "practice": "Use the three closing questions in your next retrospective, architecture review, or release readiness discussion.",
+    },
+}
+
 
 def slugify(value: str) -> str:
     value = value.lower().strip()
@@ -61,10 +154,18 @@ def parse_context() -> list[dict[str, str]]:
         notes = extract_section(body, "**Speaker Notes:**", "**Bullet Reminders:**")
         bullets = body.split("**Bullet Reminders:**", 1)[1].strip()
         bullets = re.sub(r"\n+---\s*$", "", bullets).strip()
+        filtered_lines = []
+        for line in bullets.splitlines():
+            lowered = line.lower()
+            if "[your name" in lowered or "[contact / repo link]" in lowered:
+                continue
+            filtered_lines.append(line)
+        bullets = "\n".join(filtered_lines).strip()
 
         slides.append(
             {
                 "number": f"{slide_number:02d}",
+                "number_int": slide_number,
                 "title": title,
                 "page_title": "Building the AI-Native Cloud" if slide_number == 1 else title,
                 "timing": timing,
@@ -77,6 +178,21 @@ def parse_context() -> list[dict[str, str]]:
         )
 
     return slides
+
+
+def yaml_quote(value: str) -> str:
+    return value.replace('"', '\\"')
+
+
+def chapter_meta(slide_number: int) -> dict[str, str]:
+    return CHAPTER_META.get(
+        slide_number,
+        {
+            "category": "Chapter",
+            "why": "This chapter provides context and practical guidance for building AI-native delivery workflows.",
+            "practice": "Identify one concrete improvement and test it in your next sprint.",
+        },
+    )
 
 
 def render_index(slides: list[dict[str, str]]) -> str:
@@ -108,35 +224,20 @@ def render_index(slides: list[dict[str, str]]) -> str:
     return textwrap.dedent(
         f"""---
 title: Building the AI-Native Cloud
-description: A responsive, accessible MkDocs site for the talk chapters.
+description: Chapter-by-chapter resources for conference attendees from the Building the AI-Native Cloud talk.
 ---
 
 <div class="home-hero">
   <div class="home-hero__panel">
-    <p class="home-hero__eyebrow">Asia DevOps Conference Series</p>
+        <p class="home-hero__eyebrow">Conference Companion Guide</p>
     <h1>Building the AI-Native Cloud</h1>
-    <p class="home-hero__lede">A responsive MkDocs site with one chapter for each slide, accessible light and dark modes, and the talk content laid out under every hero image.</p>
+        <p class="home-hero__lede">A chapter-by-chapter resource for conference attendees to revisit key ideas, share with teams, and turn insights into action after the session.</p>
     <div class="home-hero__actions">
-            <a class="button button--primary" href="chapters/{slides[0]['page_name']}/">Start with the opener</a>
+            <a class="button button--primary" href="chapters/{slides[0]['page_name']}/">Start with chapter 01</a>
       <a class="button button--secondary" href="#chapters">Browse chapters</a>
     </div>
   </div>
 </div>
-
-<section class="home-strip" aria-label="Site features">
-  <div>
-    <strong>Accessible</strong>
-    <span>Semantic markup, strong contrast, visible focus states.</span>
-  </div>
-  <div>
-    <strong>Responsive</strong>
-    <span>Cards and hero images reflow cleanly from mobile to desktop.</span>
-  </div>
-  <div>
-    <strong>Theme switch</strong>
-    <span>Light mode stays white with black text. Dark mode stays black with white text.</span>
-  </div>
-</section>
 
 ## Chapters
 
@@ -150,34 +251,38 @@ description: A responsive, accessible MkDocs site for the talk chapters.
 
 
 def render_chapter(slide: dict[str, str], asset_name: str) -> str:
+    meta = chapter_meta(slide["number_int"])
     return textwrap.dedent(
         f"""---
-title: {slide['number']}. {slide['page_title']}
-description: {slide['thought']}
+title: "{slide['number']} · {yaml_quote(slide['page_title'])}"
+description: "{yaml_quote(slide['thought'])}"
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide {slide['number']} · {slide['timing']}</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![{slide['title']}](../assets/{asset_name})
+<img src="../assets/{asset_name}" alt="Hero illustration for chapter {slide['number']}, {slide['page_title']}">
+
+<div class="sn-cat">{meta['category']}</div>
+
 </div>
 
-## The Thought
+# {slide['page_title']}
 
-{slide['thought']}
+*{slide['thought']}*
 
-## Slide Copy
+## Why this chapter matters
 
-{slide['bullets']}
+{meta['why']}
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-{slide['notes']}
+{meta['narrative']}
 
-</details>
+## Put this into practice
+
+{meta['practice']}
 """
     ).strip() + "\n"
 

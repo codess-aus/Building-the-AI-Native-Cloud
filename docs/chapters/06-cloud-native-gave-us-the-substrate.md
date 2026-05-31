@@ -1,30 +1,32 @@
 ---
-title: 06. Cloud-Native Gave Us the Substrate
-description: Honour the audience's existing investments. AI-native rides on top of cloud-native, it doesn't replace it.
+title: "06 · Cloud-Native Gave Us the Substrate"
+description: "Honour the audience's existing investments. AI-native rides on top of cloud-native, it doesn't replace it."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 06 · 6:30 to 7:30</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Cloud-Native Gave Us the Substrate](../assets/5-substrate.png)
+<img src="../assets/5-substrate.png" alt="Hero illustration for chapter 06, Cloud-Native Gave Us the Substrate">
+
+<div class="sn-cat">Foundation</div>
+
 </div>
 
-## The Thought
+# Cloud-Native Gave Us the Substrate
 
-Honour the audience's existing investments. AI-native rides on top of cloud-native, it doesn't replace it.
+*Honour the audience's existing investments. AI-native rides on top of cloud-native, it doesn't replace it.*
 
-## Slide Copy
+## Why this chapter matters
 
-- Cloud-native = the substrate
-- Ephemeral envs, GitOps, observability, zero-trust
-- AI-native **depends on** cloud-native maturity
-- No shortcut: weak substrate, weak agents
+AI-native delivery depends on strong cloud-native engineering fundamentals. Teams with mature platform practices can adopt agents more safely and effectively.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "I want to be clear with this audience: AI-native does not throw away cloud-native. It depends on it. Containers, declarative infrastructure, GitOps, observability, zero-trust networking, ephemeral environments: every one of these is a *prerequisite* for safe agent participation. The coding agent runs in an ephemeral environment because we learned to build ephemeral environments. It can be scoped to a branch because we learned branch protection. It can call an internal API through an MCP server because we learned service meshes and tokens. Cloud-native gave us the substrate. AI-native is what we build on it."
+This chapter reinforces that AI-native capability is built on top of cloud-native discipline. Containers, policy controls, observability, and secure environments are not optional extras; they are preconditions for safe autonomy.
 
-</details>
+The attendee takeaway is to avoid skipping maturity steps. If baseline platform reliability or security is weak, adding higher agent autonomy usually amplifies fragility rather than accelerating outcomes.
+
+## Put this into practice
+
+Prioritize platform hygiene first: ephemeral environments, policy-based deployment, and observable services before broadening agent autonomy.

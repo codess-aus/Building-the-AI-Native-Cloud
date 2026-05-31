@@ -1,34 +1,19 @@
 ---
 title: Building the AI-Native Cloud
-description: A responsive, accessible MkDocs site for the talk chapters.
+description: Chapter-by-chapter resources for conference attendees from the Building the AI-Native Cloud talk.
 ---
 
 <div class="home-hero">
   <div class="home-hero__panel">
-    <p class="home-hero__eyebrow">Asia DevOps Conference Series</p>
+        <p class="home-hero__eyebrow">Conference Companion Guide</p>
     <h1>Building the AI-Native Cloud</h1>
-    <p class="home-hero__lede">A responsive MkDocs site with one chapter for each slide, accessible light and dark modes, and the talk content laid out under every hero image.</p>
+        <p class="home-hero__lede">A chapter-by-chapter resource for conference attendees to revisit key ideas, share with teams, and turn insights into action after the session.</p>
     <div class="home-hero__actions">
-            <a class="button button--primary" href="chapters/01-title/">Start with the opener</a>
+            <a class="button button--primary" href="chapters/01-title/">Start with chapter 01</a>
       <a class="button button--secondary" href="#chapters">Browse chapters</a>
     </div>
   </div>
 </div>
-
-<section class="home-strip" aria-label="Site features">
-  <div>
-    <strong>Accessible</strong>
-    <span>Semantic markup, strong contrast, visible focus states.</span>
-  </div>
-  <div>
-    <strong>Responsive</strong>
-    <span>Cards and hero images reflow cleanly from mobile to desktop.</span>
-  </div>
-  <div>
-    <strong>Theme switch</strong>
-    <span>Light mode stays white with black text. Dark mode stays black with white text.</span>
-  </div>
-</section>
 
 ## Chapters
 

@@ -1,31 +1,32 @@
 ---
-title: 15. Close and Three Questions
-description: Leave them with questions they cannot un-ask.
+title: "15 · Close and Three Questions"
+description: "Leave them with questions they cannot un-ask."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 15 · 19:00 to 20:00</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Close and Three Questions](../assets/14-questions.png)
+<img src="../assets/14-questions.png" alt="Hero illustration for chapter 15, Close and Three Questions">
+
+<div class="sn-cat">Closing</div>
+
 </div>
 
-## The Thought
+# Close and Three Questions
 
-Leave them with questions they cannot un-ask.
+*Leave them with questions they cannot un-ask.*
 
-## Slide Copy
+## Why this chapter matters
 
-- Who decided *done*?
-- Which stage survives AI turning off?
-- Which failure mode bites first?
-- **The AI-native cloud is a loop you design.**
-- Thank you · [contact / repo link]
+The closing chapter helps teams leave with practical reflection questions that translate conference insight into immediate action.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Three questions to carry home. One: on your team's last non-trivial change, who actually decided what *done* meant? A human, an agent, or no one in particular? Two: which stage of your current loop would change least if every AI capability turned off tomorrow? That's where you're still doing traditional or AI-assisted work. Three: which of the seven failure modes is most likely to bite your team first? Write it on a sticky note before you leave this room. The AI-native cloud is not a product you buy. It's a loop you design. Thank you."
+The closing section is designed to make the content portable. Good conference ideas become valuable only when they are reused in planning meetings, architecture reviews, and retrospectives.
 
-</details>
+Use the reflection prompts as a repeatable discussion pattern to keep your team focused on trust, accountability, and long-term capability growth.
+
+## Put this into practice
+
+Use the three closing questions in your next retrospective, architecture review, or release readiness discussion.

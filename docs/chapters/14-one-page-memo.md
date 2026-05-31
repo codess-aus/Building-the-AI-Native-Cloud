@@ -1,30 +1,32 @@
 ---
-title: 14. One-Page Memo
-description: Give them something they can implement on Monday.
+title: "14 · One-Page Memo"
+description: "Give them something they can implement on Monday."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 14 · 18:00 to 19:00</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![One-Page Memo](../assets/13-memo.png)
+<img src="../assets/13-memo.png" alt="Hero illustration for chapter 14, One-Page Memo">
+
+<div class="sn-cat">Action Plan</div>
+
 </div>
 
-## The Thought
+# One-Page Memo
 
-Give them something they can implement on Monday.
+*Give them something they can implement on Monday.*
 
-## Slide Copy
+## Why this chapter matters
 
-- **AI-Native Success Criteria Memo v1**
-- Loop scope · Artifacts · Quality bars
-- Human responsibility · Anti-goals · Cadence
-- Write it this week. Embarrass yourself slightly.
+A one-page implementation memo turns ideas into execution. It creates a concrete baseline for accountability, measurement, and iteration.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Here is what I want you to take back. One page. The AI-Native Success Criteria Memo. Loop scope: when do *you* consider your loop AI-native? Artifact criteria: what does every change retain? Quality bars: what blocks a merge? Human responsibility: *which* human, named by role? Anti-goals: what are you deliberately not optimizing for? Review cadence: quarterly, with an owner. Write v1 this week. It should be slightly embarrassing in its specificity, not polished for a slide. A bar the team routinely ignores teaches everyone the memo is decorative. The memo is a target, not a description of done. But it's the artifact that turns this talk into practice."
+This chapter translates strategy into a durable operating artifact. A short, explicit memo is easier to review, teach, and update than broad slide commitments.
 
-</details>
+The attendee takeaway is practical: publish a v1 quickly, use it in real decisions, and improve it through cadence. Maturity comes from iteration under real delivery pressure.
+
+## Put this into practice
+
+Publish a version-one memo with explicit success criteria and anti-goals, then review and revise it on a fixed cadence.

@@ -1,30 +1,32 @@
 ---
-title: 08. New Workflows: Context Engineering
-description: Context is the second-most-important investment after the spec.
+title: "08 · New Workflows: Context Engineering"
+description: "Context is the second-most-important investment after the spec."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 08 · 9:00 to 10:30</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![New Workflows: Context Engineering](../assets/7-context.png)
+<img src="../assets/7-context.png" alt="Hero illustration for chapter 08, New Workflows: Context Engineering">
+
+<div class="sn-cat">Workflow</div>
+
 </div>
 
-## The Thought
+# New Workflows: Context Engineering
 
-Context is the second-most-important investment after the spec.
+*Context is the second-most-important investment after the spec.*
 
-## Slide Copy
+## Why this chapter matters
 
-- **AGENTS.md** — how this repo prefers to be edited
-- **MCP servers** — wiki, observability, internal APIs as tools
-- **Per-task context packets** for non-trivial work
-- Bad output is usually **context starvation**
+Context quality determines output quality. AI systems perform best when repository conventions, tool access, and task intent are made explicit.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Context is engineered, not assumed. Three layers. First, AGENTS.md: a plain Markdown file in the repo that tells agents how this codebase prefers to be edited. What library to use for dates. Which branches it can push to. Which conventions are non-negotiable. Second, MCP servers: the Model Context Protocol lets you expose your wiki, your observability platform, your internal APIs as first-class tools the agent can call. Writing a custom MCP server is a weekend project, not a quarter-long migration. Third, per-task context packets for non-trivial work. When an agent produces code that is locally plausible and globally wrong, the cause is almost always context starvation. Fix context, fix the agent."
+When output is locally plausible but globally wrong, the root cause is often context quality rather than model quality. This chapter highlights context as an engineering asset that should be curated deliberately.
 
-</details>
+Attendees can apply this immediately by improving repository guidance and tool boundaries so generated changes reflect architectural intent, operational constraints, and domain standards.
+
+## Put this into practice
+
+Create or refine AGENTS.md and package context for complex tasks so generated changes reflect system-level intent, not just local code patterns.

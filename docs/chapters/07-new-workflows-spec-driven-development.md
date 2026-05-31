@@ -1,30 +1,32 @@
 ---
-title: 07. New Workflows: Spec-Driven Development
-description: The spec is the durable artifact. Code is downstream.
+title: "07 · New Workflows: Spec-Driven Development"
+description: "The spec is the durable artifact. Code is downstream."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 07 · 7:30 to 9:00</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![New Workflows: Spec-Driven Development](../assets/6-sdd.png)
+<img src="../assets/6-sdd.png" alt="Hero illustration for chapter 07, New Workflows: Spec-Driven Development">
+
+<div class="sn-cat">Workflow</div>
+
 </div>
 
-## The Thought
+# New Workflows: Spec-Driven Development
 
-The spec is the durable artifact. Code is downstream.
+*The spec is the durable artifact. Code is downstream.*
 
-## Slide Copy
+## Why this chapter matters
 
-- Spec is the **durable artifact**
-- 5 lines beats 50 pages
-- Sections: Why / What changes / Success criteria / Out of scope
-- Cheaper to argue about a spec than a diff
+Spec-driven development reduces rework and ambiguity. It gives humans and agents a shared contract before implementation starts.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "The most uncomfortable change for engineers is this: the spec is now the durable artifact, and the code is downstream of it. Spec Kit formalizes this with a Specify, Plan, Tasks, Implement flow. But you don't need the toolkit to start. A five-line Markdown file in a `specs/` folder with *why*, *what changes for the user*, *success criteria*, and *out of scope* is enough. The point is not to anticipate every edge case. The point is to give the agent and the reviewer a shared contract. And here's the quiet superpower: surfacing ambiguity in a spec review, before any code is written, is dramatically cheaper than catching it in a PR."
+Spec-driven work shifts debate to the right moment: before code is written. This reduces ambiguous implementation paths and helps both humans and AI systems align on expected outcomes.
 
-</details>
+As a conference companion takeaway, think of the spec as the minimum shared contract for change. Even brief specs can dramatically improve review quality, handoffs, and post-release accountability.
+
+## Put this into practice
+
+Use a short spec template with goal, user impact, success criteria, and out-of-scope for every non-trivial change.

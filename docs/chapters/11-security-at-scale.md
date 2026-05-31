@@ -1,30 +1,32 @@
 ---
-title: 11. Security at Scale
-description: Agents are a new identity class. Treat them like one.
+title: "11 · Security at Scale"
+description: "Agents are a new identity class. Treat them like one."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 11 · 13:30 to 15:00</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Security at Scale](../assets/10-security.png)
+<img src="../assets/10-security.png" alt="Hero illustration for chapter 11, Security at Scale">
+
+<div class="sn-cat">Security</div>
+
 </div>
 
-## The Thought
+# Security at Scale
 
-Agents are a new identity class. Treat them like one.
+*Agents are a new identity class. Treat them like one.*
 
-## Slide Copy
+## Why this chapter matters
 
-- Agents are a **new identity class**
-- Scope: branches, MCP tools, secrets, environments
-- **Prompt injection** = the new SQL injection
-- Least privilege, validated outputs, human gates on impact
+Agents should be treated as a distinct identity class with constrained permissions and auditable behavior. Security outcomes depend on least privilege by design.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Security teams: an agent is a new identity class. It needs an identity, a scoped permission set, an audit trail, and a blast radius. Decide in week one, not after the near-miss. Which branches can an agent push to? Which MCP tools can it call? Which secrets must it *never* see? Write the answers in AGENTS.md and enforce them in branch protection and environment policies. Prompt injection is the new SQL injection: any text the agent reads, including issue comments, web pages fetched by tools, even file contents, is potentially adversarial. The mitigations are familiar in shape: least privilege, output validation, human approval gates for high-impact actions, and the principle that an agent should never hold a secret it cannot rotate."
+Security posture must evolve with the actor model. Agents are execution identities that need explicit boundaries, not implicit trust inherited from developer workflows.
 
-</details>
+The conference companion takeaway is to make policy concrete early: branch scope, secret access, and tool permissions should be explicit, reviewable, and enforced before broad rollout.
+
+## Put this into practice
+
+Define scope boundaries for branch access, secrets, and tool calls before rollout, and enforce them with policy controls.

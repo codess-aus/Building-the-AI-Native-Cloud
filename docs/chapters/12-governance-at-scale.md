@@ -1,30 +1,32 @@
 ---
-title: 12. Governance at Scale
-description: Governance designed on day one is cheap. Governance bolted on after an incident is expensive.
+title: "12 · Governance at Scale"
+description: "Governance designed on day one is cheap. Governance bolted on after an incident is expensive."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 12 · 15:00 to 16:30</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![Governance at Scale](../assets/11-governance.png)
+<img src="../assets/11-governance.png" alt="Hero illustration for chapter 12, Governance at Scale">
+
+<div class="sn-cat">Governance</div>
+
 </div>
 
-## The Thought
+# Governance at Scale
 
-Governance designed on day one is cheap. Governance bolted on after an incident is expensive.
+*Governance designed on day one is cheap. Governance bolted on after an incident is expensive.*
 
-## Slide Copy
+## Why this chapter matters
 
-- AGENTS.md is a **reviewed artifact**
-- Preserve run traces: model, tools, files, spec
-- Auditors will ask. Make the answer a link.
-- Write **anti-goals**, not just goals
+Governance is most effective when introduced early. Waiting until incidents occur makes controls more costly and less trusted by delivery teams.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Governance is where most teams will stumble in 2026. Three practical moves. One: make AGENTS.md a reviewed artifact, just like code. Changes to it go through PR review. Two: preserve agent run summaries on every PR, model version included. In regulated industries this is a compliance question, not a nice-to-have. Auditors will ask *which model made this change, with what tools, against which spec*. You want the answer to be a link, not an investigation. Three: set anti-goals explicitly. Write down what you are *not* trying to optimize for. *Maximum agent autonomy at the expense of accountability* is an anti-goal. *AI did it* is never a sufficient explanation in a post-incident review. Anti-goals are where hard-won wisdom lives."
+Governance works best when it is designed as part of delivery, not layered in after incidents. Early governance establishes expectations and reduces friction between engineering speed and risk management.
 
-</details>
+Attendees can use this chapter to align legal, security, and platform perspectives around shared artifacts, auditability, and exception handling before scale introduces complexity.
+
+## Put this into practice
+
+Review governance artifacts in the same cadence as code quality artifacts, including run traces and policy exceptions.

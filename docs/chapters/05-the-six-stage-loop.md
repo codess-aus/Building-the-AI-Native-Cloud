@@ -1,33 +1,32 @@
 ---
-title: 05. The Six-Stage Loop
-description: Show the anatomy. This is the spine of the rest of the talk.
+title: "05 · The Six-Stage Loop"
+description: "Show the anatomy. This is the spine of the rest of the talk."
 ---
 
-[Back to home](../index.md)
+<div class="sn-hero" markdown>
 
-<p class="chapter-meta">Slide 05 · 4:30 to 6:30</p>
+<a class="sn-back" href="../index.md">← Back</a>
 
-<div class="chapter-hero">
-![The Six-Stage Loop](../assets/4-loop.png)
+<img src="../assets/4-loop.png" alt="Hero illustration for chapter 05, The Six-Stage Loop">
+
+<div class="sn-cat">Foundation</div>
+
 </div>
 
-## The Thought
+# The Six-Stage Loop
 
-Show the anatomy. This is the spine of the rest of the talk.
+*Show the anatomy. This is the spine of the rest of the talk.*
 
-## Slide Copy
+## Why this chapter matters
 
-```
-INTENT → SPEC → CONTEXT → CHANGE → VERIFICATION → DELIVERY
-   ↑___________________________________________________|
-          production signals feed back into the spec
-```
-- New artifact: **spec**
-- New arrow: **feedback to spec**
+The six-stage loop shows where quality is created and where risk is introduced. Making each stage explicit improves handoffs and governance.
 
-<details class="speaker-notes">
-<summary>Speaker notes</summary>
+## Key points for your team
 
-> "Six stages. Intent: captured deliberately, not in a Slack thread. Spec: an artifact in the repo, brief and reviewable in five minutes. Context: engineered through AGENTS.md, MCP servers, and per-task context packets. Change: made by a human, by agent mode, or by the coding agent, anchored on the spec. Verification: layered from cheap to expensive: tests, evaluators, policy gates, human review. Delivery: ships through your existing CI/CD and feeds production signals *back into the spec*, not just the backlog. The new artifact at the start is the spec. The new arrow at the end is the feedback into the spec. Everything else is rebalanced, not reinvented."
+The six-stage model turns a vague delivery idea into a system that teams can inspect and improve. Instead of treating development as one continuous stream, it highlights where decisions are made and where controls should exist.
 
-</details>
+Attendees can use this as a workshop artifact with engineering and platform teams: map each stage to current tooling and identify where missing artifacts or unclear ownership create avoidable risk.
+
+## Put this into practice
+
+Document your loop from intent to delivery and add one concrete quality gate to each stage.

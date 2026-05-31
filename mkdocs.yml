@@ -1,0 +1,59 @@
+site_name: Building the AI-Native Cloud
+site_description: A responsive MkDocs site for the Building the AI-Native Cloud talk.
+site_url: https://codess-aus.github.io/Building-the-AI-Native-Cloud/
+repo_url: https://github.com/codess-aus/Building-the-AI-Native-Cloud
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - 01 Title: chapters/01-title.md
+  - 02 Quiet Shift: chapters/02-the-quiet-shift.md
+  - 03 Three Eras: chapters/03-three-eras-side-by-side.md
+  - 04 AI Native: chapters/04-defining-ai-native.md
+  - 05 The Loop: chapters/05-the-six-stage-loop.md
+  - 06 Substrate: chapters/06-cloud-native-gave-us-the-substrate.md
+  - 07 Spec Driven Development: chapters/07-new-workflows-spec-driven-development.md
+  - 08 Context Engineering: chapters/08-new-workflows-context-engineering.md
+  - 09 Humans and Agents: chapters/09-new-operating-model-humans-agents.md
+  - 10 Reliability: chapters/10-reliability-at-scale.md
+  - 11 Security: chapters/11-security-at-scale.md
+  - 12 Governance: chapters/12-governance-at-scale.md
+  - 13 Failure Modes: chapters/13-seven-failure-modes.md
+  - 14 One Page Memo: chapters/14-one-page-memo.md
+  - 15 Questions: chapters/15-close-and-three-questions.md

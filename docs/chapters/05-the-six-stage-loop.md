@@ -19,23 +19,39 @@ description: "How to break delivery into explicit stages so quality and risk are
 
 ## Why this chapter matters
 
-The six-stage loop shows where quality is created and where risk is introduced. Making each stage explicit improves handoffs and governance.
+Without a clear loop, teams optimize the most visible stage: coding. But production outcomes are shaped by earlier decisions and later validations.
+
+The six-stage loop makes the whole delivery system explicit so quality can be engineered end to end.
 
 ## Key points for your team
 
-The six-stage model turns a vague delivery idea into a system that teams can inspect and improve. Instead of treating development as one continuous stream, it highlights where decisions are made and where controls should exist.
+Think of the six stages as a control surface:
 
-Attendees can use this as a workshop artifact with engineering and platform teams: map each stage to current tooling and identify where missing artifacts or unclear ownership create avoidable risk.
+1. Intent: what problem are we solving and why now?
+2. Spec: what exactly changes and what does success mean?
+3. Context: what constraints, tools, and prior decisions matter?
+4. Build: who implements what, and under which boundaries?
+5. Verify: what evidence proves quality, safety, and policy compliance?
+6. Operate and learn: what telemetry and outcomes feed back into intent?
+
+Every stage should produce a durable artifact. Missing artifacts are where future incidents hide.
+
+The most important addition in AI-native loops is feedback from operations back to intent and specification. That closes the learning cycle.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect New artifact: **spec** and New arrow: **feedback to spec** with your current delivery loop.
+Map one recent production change across all six stages and inspect:
 
-In the session context, Six stages. Intent: captured deliberately, not in a Slack thread. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Which stages had strong artifacts?
+- Which had only chat or verbal context?
+- Where were quality gates ambiguous?
+- Where did operational feedback fail to influence the next change?
+
+This exercise typically reveals that coding was not the bottleneck. Alignment and verification were.
 
 ## Put this into practice
 
-Document your loop from intent to delivery and add one concrete quality gate to each stage.
+For each of the six stages, define one required artifact and one required reviewer role. Start minimal, then increase rigor over time.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../04-defining-ai-native/">Previous chapter</a>

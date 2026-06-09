@@ -19,23 +19,33 @@ description: "Reflection prompts to help your team carry trust and accountabilit
 
 ## Why this chapter matters
 
-The closing chapter helps teams leave with practical reflection questions that translate conference insight into immediate action.
+Strong closes create durable action. These three questions are designed to travel with teams into real planning and delivery conversations after the event.
+
+They are not rhetorical. They are operational diagnostics.
 
 ## Key points for your team
 
-The closing section is designed to make the content portable. Good conference ideas become valuable only when they are reused in planning meetings, architecture reviews, and retrospectives.
+Use these three questions repeatedly:
 
-Use the reflection prompts as a repeatable discussion pattern to keep your team focused on trust, accountability, and long-term capability growth.
+1. Who decided what done meant?
+2. Which stage still works if AI is unavailable?
+3. Which failure mode is most likely to hurt us first?
+
+Each question surfaces a different risk dimension: accountability, resilience, and preparedness.
+
+When teams answer these honestly, they usually discover their next highest-value improvement without needing a large transformation program.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect Who decided *done*?, Which stage survives AI turning off?, Which failure mode bites first?, and **The AI-native cloud is a loop you design.** with your current delivery loop.
+Apply the questions to one recent release and document the answers.
 
-In the session context, Three questions to carry home. One: on your team's last non-trivial change, who actually decided what *done* meant? Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+Then compare answers across engineering, product, and security stakeholders. Misalignment between groups is often the most actionable signal.
+
+The destination is not perfect automation. The destination is a trustworthy, adaptable loop where human judgment and machine leverage reinforce each other.
 
 ## Put this into practice
 
-Use the three closing questions in your next retrospective, architecture review, or release readiness discussion.
+Adopt these three questions as a standing section in retrospectives and release readiness reviews for the next quarter.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../14-one-page-memo/">Previous chapter</a>

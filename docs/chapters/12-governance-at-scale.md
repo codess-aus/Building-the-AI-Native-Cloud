@@ -19,23 +19,37 @@ description: "Designing governance early so speed and accountability can scale t
 
 ## Why this chapter matters
 
-Governance is most effective when introduced early. Waiting until incidents occur makes controls more costly and less trusted by delivery teams.
+Governance is often deferred because it is seen as a drag on delivery speed. In practice, delayed governance creates larger slowdowns through rework, incident response, and cross-team mistrust.
+
+Early governance is cheaper, clearer, and more compatible with velocity.
 
 ## Key points for your team
 
-Governance works best when it is designed as part of delivery, not layered in after incidents. Early governance establishes expectations and reduces friction between engineering speed and risk management.
+Effective governance in AI-native delivery is artifact-centered:
 
-Attendees can use this chapter to align legal, security, and platform perspectives around shared artifacts, auditability, and exception handling before scale introduces complexity.
+- Policies are encoded in tools and workflows.
+- Evidence is captured continuously, not assembled post hoc.
+- Exceptions are explicit, time-bounded, and reviewable.
+
+The goal is not to block change. The goal is to make responsible change repeatable.
+
+This requires shared ownership between engineering, platform, security, and legal. Governance succeeds when these groups align on the same minimal artifact set.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect AGENTS.md is a **reviewed artifact**, Preserve run traces: model, tools, files, spec, Auditors will ask. Make the answer a link., and Write **anti-goals**, not just goals with your current delivery loop.
+Review governance readiness in three categories:
 
-In the session context, Governance is where most teams will stumble in 2026. Three practical moves. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Evidence: what artifacts are mandatory per change?
+- Accountability: who signs off by risk tier?
+- Exceptions: how are deviations documented and closed?
+
+Also define anti-goals. They prevent accidental drift by making unacceptable outcomes explicit.
+
+Governance maturity is a competitive advantage because it allows faster scaling without trust debt.
 
 ## Put this into practice
 
-Review governance artifacts in the same cadence as code quality artifacts, including run traces and policy exceptions.
+Publish a governance v1 playbook with required artifacts, risk tiers, approval paths, and exception handling, then iterate quarterly.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../11-security-at-scale/">Previous chapter</a>

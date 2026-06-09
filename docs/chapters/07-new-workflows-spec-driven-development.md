@@ -21,30 +21,37 @@ description: "How short, explicit specs improve alignment before implementation 
 
 Spec-driven development reduces rework and ambiguity. It gives humans and agents a shared contract before implementation starts.
 
-Spec-Driven Development flips the script on traditional software development. For decades, code has been king - specifications were just scaffolding we built and discarded once the "real work" of coding began. Spec-Driven Development changes this: specifications become executable, directly generating working implementations rather than just guiding them.
-
-Spec-Driven Development is a structured process that emphasizes:
-
-- Intent-driven development where specifications define the "what" before the "how"
-- Rich specification creation using guardrails and organizational principles
-- Multi-step refinement rather than one-shot code generation from prompts
-- Heavy reliance on advanced AI model capabilities for specification interpretation
+In traditional teams, specs are often treated as temporary planning documents. In AI-native teams, the spec becomes a durable control artifact that aligns humans and machines on expected outcomes.
 
 ## Key points for your team
 
-Spec-driven work shifts debate to the right moment: before code is written. This reduces ambiguous implementation paths and helps both humans and AI systems align on expected outcomes.
+Spec-driven development shifts friction to the cheapest point in the lifecycle: before implementation. A 10-minute disagreement on intent can avoid days of rework across code, tests, security review, and release planning.
 
-As a conference companion takeaway, think of the spec as the minimum shared contract for change. Even brief specs can dramatically improve review quality, handoffs, and post-release accountability.
+Effective specs are short and explicit. A practical structure:
+
+- Why now: the business or user need.
+- What changes: concrete scope.
+- Success criteria: observable outcomes.
+- Out of scope: what this change will not do.
+- Constraints: policy, architecture, and compliance boundaries.
+
+For agent workflows, this structure drastically improves output quality because it replaces open-ended prompting with constrained execution intent.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect Spec is the **durable artifact**, 5 lines beats 50 pages, Sections: Why / What changes / Success criteria / Out of scope, and Cheaper to argue about a spec than a diff with your current delivery loop.
+Review your last five non-trivial changes and ask:
 
-In the session context, The most uncomfortable change for engineers is this: the spec is now the durable artifact, and the code is downstream of it. Spec Kit formalizes this with a Specify, Plan, Tasks, Implement flow. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Which had explicit success criteria before coding?
+- Which had clear out-of-scope boundaries?
+- Which needed major rework due to misunderstood intent?
+
+The answers will show where spec discipline creates immediate leverage.
+
+Spec Kit and similar workflows are useful accelerators, but the core principle is tool-agnostic: code quality improves when intent quality improves.
 
 ## Put this into practice
 
-Use a short spec template with goal, user impact, success criteria, and out-of-scope for every non-trivial change.
+Require a short spec for every change above a threshold of impact or complexity. Keep the template minimal and enforce completion in pull request metadata.
 
 Check out the [GitHub Spec-Kit](https://github.com/github/spec-kit) for an open source toolkit that allows you to focus on product scenarios and predictable outcomes instead of vibe coding every piece from scratch.
 

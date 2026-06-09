@@ -19,23 +19,37 @@ description: "How teams can increase ambition and leverage by redesigning roles 
 
 ## Why this chapter matters
 
-The goal is not smaller ambition with fewer people. The opportunity is higher-leverage engineering where humans focus on decisions, constraints, and outcomes.
+The operating model question is often framed as substitution: what tasks can AI replace? That framing is too narrow and usually leads to short-term optimization.
+
+The better question is leverage: how do humans and agents combine to increase responsible ambition?
 
 ## Key points for your team
 
-This chapter reframes the organizational question from replacement to leverage. High-performing teams use AI to increase scope and quality of what they can responsibly deliver, not just to cut implementation time.
+In strong AI-native teams:
 
-The practical conference takeaway is role clarity: teams need people who can define intent, shape constraints, and review integrated outcomes, not only produce diffs quickly.
+- Humans own intent, constraints, trade-offs, and final accountability.
+- Agents handle bounded execution and synthesis work.
+- Review focuses on correctness of outcome, not just plausibility of code.
+
+This creates role evolution, not role collapse. Engineers become stronger at problem framing, system judgment, and risk evaluation.
+
+Organizations that reward only raw implementation throughput will underutilize both humans and agents.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect Wrong race: cut headcount, Right race: **expand ambition**, New roles: **specifier, context curator, reviewer of intent**, and Less typing, more judgment with your current delivery loop.
+Define explicit responsibilities for three emerging capabilities:
 
-In the session context, A colleague told me recently, *these are dark times to be developers. Small companies will cut three engineers and keep the two who can talk to the business and code faster with AI.* I disagree, strongly. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Specifier: translates business intent into testable delivery contracts.
+- Context curator: packages constraints and relevant system knowledge.
+- Outcome reviewer: validates integrated behavior and risk boundaries.
+
+These capabilities can exist within current roles, but they must be visible, taught, and measured.
+
+The result is a healthier system: less manual toil, more strategic engineering, and better alignment with business outcomes.
 
 ## Put this into practice
 
-Redefine role expectations to include specification, context curation, and review of intent, not only implementation throughput.
+Update your engineering competency framework to include intent quality, context quality, and review quality as first-class expectations.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../08-new-workflows-context-engineering/">Previous chapter</a>

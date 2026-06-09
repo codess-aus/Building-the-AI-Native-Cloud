@@ -19,23 +19,41 @@ description: "A practical model for understanding where your team is today and w
 
 ## Why this chapter matters
 
-Shared language reduces confusion. This chapter helps teams distinguish traditional, AI-assisted, and AI-native ways of working without overclaiming maturity.
+Most teams are not purely traditional or purely AI-native. They are hybrid. Without a shared model, discussions about maturity become vague and political.
+
+This chapter gives you a practical map so engineering leaders can compare current behavior against desired behavior with less ambiguity.
 
 ## Key points for your team
 
-This chapter is a positioning tool. It helps teams avoid speaking past each other by defining concrete differences between traditional, AI-assisted, and AI-native loops.
+Use the three eras as a diagnostic lens:
 
-Use it to make planning discussions more honest: if the loop has not changed, you are optimizing execution speed, not redesigning delivery. That distinction is useful, especially when prioritizing platform and governance investments.
+- Traditional: humans execute every stage directly; automation is deterministic.
+- AI-assisted: humans remain primary executors; AI accelerates local tasks.
+- AI-native: humans define intent and constraints; agents participate across stages with traceability.
+
+The critical distinction is not tool usage. It is whether your loop and governance assume meaningful machine participation.
+
+This prevents two common mistakes:
+
+- Over-claiming maturity because developers use AI tools heavily.
+- Under-investing in platform and governance because teams confuse speed with system redesign.
 
 ## What to review with your team
 
-For team discussion, focus on how this chapter can be translated into explicit workflow decisions and accountability points.
+Run a workshop and score one active product team across each stage of delivery:
 
-In the session context, Three eras. Traditional: humans do every stage, AI is absent. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Who creates and approves intent?
+- How is context prepared and validated?
+- What is the role of AI in implementation?
+- What evidence is required for release?
+
+You will likely find different eras coexisting within one team. That is expected. The value is visibility.
+
+Use this visibility to define a realistic 90-day move from current state to next state.
 
 ## Put this into practice
 
-Choose the row in the maturity table that best describes your current loop and define one change needed to move to the next stage.
+Pick one workflow, place it in the maturity model, and declare one structural change needed to progress one level. Do not choose a tooling change first; choose a loop change first.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../02-the-quiet-shift/">Previous chapter</a>

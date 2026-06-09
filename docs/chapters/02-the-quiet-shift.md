@@ -19,23 +19,42 @@ description: "What has already changed in software delivery, and why intentional
 
 ## Why this chapter matters
 
-Most teams already use AI daily. The shift now is from ad-hoc usage to an intentional operating model where AI work is part of the delivery system.
+The shift to AI-native development did not begin with one launch event. It happened gradually: first suggestions, then chat assistants, then agents that can plan and execute meaningful code changes.
+
+Many organizations are already in this shift operationally, but not yet organizationally. Engineers changed behavior first. Policy, controls, and role definitions are still catching up.
 
 ## Key points for your team
 
-The quiet shift is that AI is already embedded in day-to-day engineering work, whether or not organizations have formalized policy around it. What changed first was behavior; governance and process are now catching up.
+Treat AI usage as normal delivery work, not an exceptional side activity. That means:
 
-For attendees, the practical takeaway is to stop treating AI usage as exceptional. Treat it as normal engineering work that needs the same clarity around ownership, verification, and accountability as any other production change.
+- It belongs in standard engineering workflows.
+- It should produce reviewable artifacts.
+- It must inherit the same reliability and security expectations as human-authored work.
+
+Ignoring this reality creates shadow workflows. Teams continue using AI, but evidence and accountability drift outside your normal systems.
+
+The opportunity is to make the invisible visible: where AI contributes, where humans decide, and where controls apply.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect 2024 to 2026: a stack of compatible primitives, Agent mode, coding agents, MCP, Spec Kit, AGENTS.md, ~90% of technologists use AI at work (DORA 2025), and New question: is your *loop* designed for AI? with your current delivery loop.
+Use this chapter as a discovery exercise:
 
-In the session context, Between the day Copilot suggested its first line of code and the day it started opening its own pull requests, something quietly shifted. It didn't arrive as one launch. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Map where AI already appears in daily work: ideation, coding, tests, docs, operations.
+- Identify where those actions are not captured in durable artifacts.
+- Define ownership boundaries for AI-assisted and agent-led tasks.
+- Prioritize one workflow to formalize in the next sprint.
+
+A team that can see this shift clearly can redesign intentionally. A team that cannot will experience it as unplanned drift.
 
 ## Put this into practice
 
-Map where AI is already present in your workflow, then identify one stage that still depends on informal process and make it explicit.
+Create a one-page inventory of current AI touchpoints and classify each one as:
+
+- Allowed and governed.
+- Allowed with missing controls.
+- Not allowed in its current form.
+
+That single inventory often unlocks months of clearer decision-making.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../01-title/">Previous chapter</a>

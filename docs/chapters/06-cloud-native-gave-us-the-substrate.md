@@ -19,23 +19,39 @@ description: "Why strong cloud-native foundations are the prerequisite for safe 
 
 ## Why this chapter matters
 
-AI-native delivery depends on strong cloud-native engineering fundamentals. Teams with mature platform practices can adopt agents more safely and effectively.
+AI-native delivery does not replace cloud-native discipline. It consumes it.
+
+If your platform cannot provide repeatable environments, policy controls, and observability, then agent autonomy adds volatility faster than value.
 
 ## Key points for your team
 
-This chapter reinforces that AI-native capability is built on top of cloud-native discipline. Containers, policy controls, observability, and secure environments are not optional extras; they are preconditions for safe autonomy.
+Cloud-native maturity provides the prerequisites AI-native systems need:
 
-The attendee takeaway is to avoid skipping maturity steps. If baseline platform reliability or security is weak, adding higher agent autonomy usually amplifies fragility rather than accelerating outcomes.
+- Ephemeral environments for safe, parallel experimentation.
+- GitOps and policy enforcement for deterministic release paths.
+- Observability for fast detection and diagnosis of unexpected behavior.
+- Identity and secrets controls for least-privilege execution.
+
+These are not technical preferences. They are safety and scaling requirements.
+
+Teams that skip this substrate often misdiagnose failures as model quality issues when the root cause is platform inconsistency.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect Cloud-native = the substrate, Ephemeral envs, GitOps, observability, zero-trust, AI-native **depends on** cloud-native maturity, and No shortcut: weak substrate, weak agents with your current delivery loop.
+Evaluate readiness across four domains:
 
-In the session context, I want to be clear with this audience: AI-native does not throw away cloud-native. It depends on it. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Environment consistency.
+- Policy enforcement.
+- Operational telemetry.
+- Security boundary control.
+
+If any domain is weak, prioritize substrate hardening before increasing agent permissions.
+
+This sequencing reduces avoidable incidents and builds executive confidence in the transition.
 
 ## Put this into practice
 
-Prioritize platform hygiene first: ephemeral environments, policy-based deployment, and observable services before broadening agent autonomy.
+Create a readiness checklist tied to these four domains and require a passing baseline before enabling autonomous agent workflows in production repositories.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../05-the-six-stage-loop/">Previous chapter</a>

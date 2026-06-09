@@ -19,23 +19,35 @@ description: "Turning conference insight into a living operating document your t
 
 ## Why this chapter matters
 
-A one-page implementation memo turns ideas into execution. It creates a concrete baseline for accountability, measurement, and iteration.
+Conference inspiration decays quickly unless translated into a working operating artifact.
+
+The one-page memo is that artifact: short enough to read, specific enough to execute, and structured enough to govern.
 
 ## Key points for your team
 
-This chapter translates strategy into a durable operating artifact. A short, explicit memo is easier to review, teach, and update than broad slide commitments.
+A practical memo template includes:
 
-The attendee takeaway is practical: publish a v1 quickly, use it in real decisions, and improve it through cadence. Maturity comes from iteration under real delivery pressure.
+- Objective: what capability you are trying to build.
+- Loop scope: which products, teams, and change types are included.
+- Required artifacts: specs, traces, verification, approvals.
+- Quality bars: non-negotiable thresholds.
+- Human accountability: explicit decision ownership.
+- Anti-goals: what you will not optimize for.
+- Cadence: review and revision schedule.
+
+A one-page memo is not a strategy document for a shelf. It is an operational document used in planning, review, and release decisions.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect **AI-Native Success Criteria Memo v1**, Loop scope · Artifacts · Quality bars, Human responsibility · Anti-goals · Cadence, and Write it this week. Embarrass yourself slightly. with your current delivery loop.
+When drafting your memo, optimize for clarity over perfection. A mediocre v1 used consistently is more valuable than an ideal v3 never adopted.
 
-In the session context, Here is what Attendees are encouraged to take back. One page. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+Pressure-test it by applying it to one real change and collecting feedback from engineering, security, and platform reviewers.
+
+Iteration under real work is how this memo becomes your team's AI-native operating agreement.
 
 ## Put this into practice
 
-Publish a version-one memo with explicit success criteria and anti-goals, then review and revise it on a fixed cadence.
+Publish memo v1 within one week, apply it to a pilot workflow, and schedule a 30-day review to revise based on observed friction and outcomes.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../13-seven-failure-modes/">Previous chapter</a>

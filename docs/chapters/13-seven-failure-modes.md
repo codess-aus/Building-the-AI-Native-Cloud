@@ -19,23 +19,37 @@ description: "Recognizing common failure patterns early and turning them into co
 
 ## Why this chapter matters
 
-Known failure patterns help teams avoid repeating preventable mistakes. Naming these patterns builds shared vigilance across engineering, security, and operations.
+Failure modes are useful because they convert vague anxiety into concrete preparation. Teams that can name likely failures early can design countermeasures before the cost curve steepens.
 
 ## Key points for your team
 
-The value of failure modes is not prediction accuracy, it is preparedness. Teams that can name likely failure patterns earlier can design practical safeguards before those risks materialize in production.
+Seven common failure modes in early AI-native adoption:
 
-For conference attendees, this chapter is a facilitation tool: use it to run a lightweight risk workshop and convert each likely failure mode into one concrete mitigation owned by the team.
+1. Spec vacuum: implementation begins before intent is stable.
+2. Context drift: agents work from stale or partial constraints.
+3. Automation theater: impressive demos without production-grade controls.
+4. Policy lag: permissions and controls trail usage patterns.
+5. Reliability blind spots: insufficient traces and weak evidence chains.
+6. Accountability ambiguity: unclear human ownership at release time.
+7. Scale-before-discipline: autonomy increases faster than operating maturity.
+
+These modes appear across industries because they are workflow and governance problems, not vendor-specific tool problems.
 
 ## What to review with your team
 
-For team discussion, focus on how this chapter can be translated into explicit workflow decisions and accountability points.
+Run a failure mode workshop and score each mode by:
 
-In the session context, Seven failure modes will hit you in the first six months. I'll name them fast and you'll recognize at least two. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Likelihood in the next 90 days.
+- Potential impact on customers or operations.
+- Current mitigation strength.
+
+Then assign one owner and one near-term mitigation per high-scoring mode.
+
+The exercise is intentionally lightweight. The point is to move from awareness to ownership.
 
 ## Put this into practice
 
-Pick the two failure modes most likely for your team and define countermeasures before broadening AI usage.
+Pick your top two failure modes and define measurable safeguards with dates, owners, and verification checks.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../12-governance-at-scale/">Previous chapter</a>

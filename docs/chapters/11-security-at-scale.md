@@ -19,23 +19,39 @@ description: "Treating agents as execution identities with explicit boundaries a
 
 ## Why this chapter matters
 
-Agents should be treated as a distinct identity class with constrained permissions and auditable behavior. Security outcomes depend on least privilege by design.
+Security teams have a clear new requirement: treat agents as first-class execution identities.
+
+If agents inherit broad human-level access without tight scoping, blast radius expands faster than controls can adapt.
 
 ## Key points for your team
 
-Security posture must evolve with the actor model. Agents are execution identities that need explicit boundaries, not implicit trust inherited from developer workflows.
+A practical security model for agents includes:
 
-The conference companion takeaway is to make policy concrete early: branch scope, secret access, and tool permissions should be explicit, reviewable, and enforced before broad rollout.
+- Identity: every agent action is attributable.
+- Scope: permissions are bounded by task, environment, and tool.
+- Isolation: execution happens in controlled boundaries.
+- Validation: outputs are checked before high-impact actions.
+
+Prompt injection and context poisoning are now routine threat vectors. Teams should model them explicitly, not treat them as edge cases.
+
+Least privilege is no longer just an infrastructure concern. It is a workflow design concern.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect Agents are a **new identity class**, Scope: branches, MCP tools, secrets, environments, **Prompt injection** = the new SQL injection, and Least privilege, validated outputs, human gates on impact with your current delivery loop.
+Walk through one end-to-end scenario where an agent modifies production-impacting code:
 
-In the session context, Security teams: an agent is a new identity class. It needs an identity, a scoped permission set, an audit trail, and a blast radius. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- What identity does it run as?
+- What can it read and write?
+- Which secrets are reachable?
+- What gates block unsafe release?
+
+If you cannot answer these quickly, security design is under-specified.
+
+Documented boundaries increase both safety and engineering velocity because teams spend less time debating ad hoc exceptions.
 
 ## Put this into practice
 
-Define scope boundaries for branch access, secrets, and tool calls before rollout, and enforce them with policy controls.
+Create an agent permission matrix by repository and environment, then enforce it with policy and runtime controls before increasing autonomy.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../10-reliability-at-scale/">Previous chapter</a>

@@ -19,23 +19,38 @@ description: "Why context quality drives output quality, and how to engineer con
 
 ## Why this chapter matters
 
-Context quality determines output quality. AI systems perform best when repository conventions, tool access, and task intent are made explicit.
+Model capability is now broad enough that context quality has become the dominant performance variable in many engineering tasks.
+
+When outputs are syntactically correct but strategically wrong, the issue is usually context starvation, not model failure.
 
 ## Key points for your team
 
-When output is locally plausible but globally wrong, the root cause is often context quality rather than model quality. This chapter highlights context as an engineering asset that should be curated deliberately.
+Treat context as an engineered input with layers:
 
-Attendees can apply this immediately by improving repository guidance and tool boundaries so generated changes reflect architectural intent, operational constraints, and domain standards.
+- Repository context: architecture, conventions, coding standards, decision records.
+- Tool context: what systems the agent can query or modify.
+- Task context: explicit objective, constraints, and acceptance criteria.
+
+High-performing teams stop assuming context is "somewhere in the repo." They package the minimum context needed for the current task.
+
+This is especially important for complex, cross-cutting changes where local file patterns are poor predictors of the right system-level decision.
 
 ## What to review with your team
 
-For team discussion, use this chapter to connect **AGENTS.md** - how this repo prefers to be edited, **MCP servers** - wiki, observability, internal APIs as tools, **Per-task context packets** for non-trivial work, and Bad output is usually **context starvation** with your current delivery loop.
+Audit context readiness in one repository:
 
-In the session context, Context is engineered, not assumed. Three layers. Use that framing to align engineering, platform, and governance stakeholders on concrete next steps.
+- Is there clear contributor guidance for humans and agents?
+- Are architectural constraints documented where changes are made?
+- Are tool permissions explicit and scoped?
+- Do complex tasks include prepared context packets?
+
+Most teams discover they have partial context assets but no repeatable packaging process.
+
+Building that process yields outsized gains in quality and review speed.
 
 ## Put this into practice
 
-Create or refine AGENTS.md and package context for complex tasks so generated changes reflect system-level intent, not just local code patterns.
+For your next complex change, create a context packet with architecture notes, constraints, known risks, and success criteria. Compare the output quality and rework rate against your baseline.
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../07-new-workflows-spec-driven-development/">Previous chapter</a>

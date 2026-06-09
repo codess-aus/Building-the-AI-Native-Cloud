@@ -33,9 +33,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate site content
-        run: python build_site.py
-
       - name: Build MkDocs site
         run: mkdocs build --strict
 

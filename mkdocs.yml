@@ -42,6 +42,7 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Resources: resources.md
   - 01 Title: chapters/01-title.md
   - 02 Quiet Shift: chapters/02-the-quiet-shift.md
   - 03 Three Eras: chapters/03-three-eras-side-by-side.md

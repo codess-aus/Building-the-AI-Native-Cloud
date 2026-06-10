@@ -42,7 +42,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Resources: resources.md
   - 01 Title: chapters/01-title.md
   - 02 Quiet Shift: chapters/02-the-quiet-shift.md
   - 03 Three Eras: chapters/03-three-eras-side-by-side.md
@@ -58,3 +57,4 @@ nav:
   - 13 Failure Modes: chapters/13-seven-failure-modes.md
   - 14 One Page Memo: chapters/14-one-page-memo.md
   - 15 Questions: chapters/15-close-and-three-questions.md
+  - Resources: resources.md

@@ -140,8 +140,12 @@ description: Chapter-by-chapter resources for conference attendees from the Buil
     <p class="chapter-card__description">Leave them with questions they cannot un-ask.</p>
   </div>
 </a>
-</div>
-
-<div class="chapter-nav">
-    <a class="chapter-nav__button chapter-nav__button--primary" href="resources/">Resources</a>
+<a class="chapter-card" href="resources/" aria-label="Open Resources">
+  <img src="assets/13-memo.png" alt="Thumbnail image for Resources">
+  <div class="chapter-card__body">
+    <p class="chapter-card__tag">Resources</p>
+    <h2 class="chapter-card__title">Further Reading and Links</h2>
+    <p class="chapter-card__description">Tools, guides, and learning paths to continue exploring AI-native cloud practices.</p>
+  </div>
+</a>
 </div>

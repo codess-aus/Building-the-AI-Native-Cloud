@@ -141,3 +141,7 @@ description: Chapter-by-chapter resources for conference attendees from the Buil
   </div>
 </a>
 </div>
+
+<div class="chapter-nav">
+    <a class="chapter-nav__button chapter-nav__button--primary" href="resources/">Resources</a>
+</div>

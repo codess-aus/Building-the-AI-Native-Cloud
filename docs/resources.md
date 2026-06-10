@@ -17,8 +17,8 @@ Use these links to keep exploring the tools, workflows, and learning paths conne
 
 ## Tools and projects
 
-- [Git-Ape](https://azure.github.io/git-ape/) — platform engineering framework for the agentic era.
-- [Awesome Copilot](https://awesome-copilot.github.com/) — curated collection of GitHub Copilot agents, skills, instructions, hooks, and tutorials.
+- [Git-Ape](https://github.com/Azure/git-ape) — platform engineering framework for the agentic era.
+- [Awesome Copilot](https://github.com/github/awesome-copilot) — curated collection of GitHub Copilot agents, skills, instructions, hooks, and tutorials.
 - [Spec-Kit](https://github.com/github/spec-kit) — open source toolkit for spec-driven development with GitHub.
 
 ## Learning paths

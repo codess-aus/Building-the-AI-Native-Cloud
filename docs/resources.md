@@ -28,6 +28,10 @@ Use these links to keep exploring the tools, workflows, and learning paths conne
   - [GitHub Copilot Fundamentals Part 1 of 2](https://learn.microsoft.com/en-us/training/paths/copilot/)
   - [GitHub Copilot Fundamentals Part 2 of 2](https://learn.microsoft.com/en-us/training/paths/gh-copilot-2/)
 
+## Connect
+
+- [Scaling Guacamole](https://scaling-guacamole.com) — follow along on the blog for more on AI-native cloud, platform engineering, and the ideas behind this talk.
+
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--primary" href="../">Back to home</a>
 </div>

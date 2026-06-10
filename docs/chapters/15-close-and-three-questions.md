@@ -49,5 +49,5 @@ Adopt these three questions as a standing section in retrospectives and release 
 
 <div class="chapter-nav">
     <a class="chapter-nav__button chapter-nav__button--secondary" href="../14-one-page-memo/">Previous chapter</a>
-    <a class="chapter-nav__button chapter-nav__button--primary" href="../../">Back to home</a>
+    <a class="chapter-nav__button chapter-nav__button--primary" href="../../resources/">Resources</a>
 </div>
